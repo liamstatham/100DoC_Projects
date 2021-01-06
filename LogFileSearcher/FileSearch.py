@@ -62,20 +62,47 @@ for lines in file:
 print('Number of records already in the database: ',currentrecords)
 print('Number of records added to database: ',newrecords)
 
+#logid = 1
 #Sql query to print top record
-response = input('Print top record? y or n: ')
-if response == 'y':
-    cur.execute('''SELECT * FROM Logs ORDER BY Created''')
-    print(cur.fetchone())
-else:
-    print('Program closing.')
+#response = input('Print top record? y or n: ')
+#if response == 'y':
+#    cur.execute('''SELECT * FROM Logs WHERE LogID = ?''', (logid,))
+#    print('This is row: ', logid)
+#    print(cur.fetchone())
+#    logid = logid + 1
+#else:
+#    print('Program closing.')
 #Query to print next record - will need to associate rows and select next id.
-response = input('Next row? y')
-if response == 'y':
-    print(cur.fetchnextrow())
+#Function to return values
+def returnvalues(logid):
+    response = input('Next row? y or n: ')
+#    logid = logid
+    if response == 'y':
+        cur.execute('''SELECT * FROM Logs WHERE LogID = ?''',(logid,))
+        print('This is row: ', logid)
+        print(cur.fetchone())
+#        logid = logid + 1
+#        return logid
+    else:
+        print('Program closing.')
+
+#Call return values Function
+#returnvalues()
+
+#loop through rows in table
+cur.execute('''SELECT COUNT(LogID) FROM Logs''')
+rows = cur.fetchone()
+rowsint = rows[0]
+logid = 1
+#print(type(rowsint))
+while logid < rowsint:
+    returnvalues(logid)
+    logid = logid + 1
+else:
+    print('No more rows.')
 
 #close database connection
-    cur.close()
+cur.close()
 
 
 
