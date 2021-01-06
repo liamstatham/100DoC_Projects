@@ -1,0 +1,16 @@
+#Software: Microsoft Internet Information Services 8.5
+#Version: 1.0
+#Date: 2021-01-02 00:00:00
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status sc-bytes cs-bytes time-taken
+2021-01-02 00:00:00 172.17.100.20 POST /Account/GetJWTToken - 80 - 172.17.100.110 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36 http://admin-uk.synergytrak.com/facility 302 0 0 523 792 0
+2021-01-02 00:00:00 172.17.100.20 GET /account/logon targetUrl=%2fAccount%2fGetJWTToken 80 - 172.17.100.110 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36 http://admin-uk.synergytrak.com/facility 200 0 0 2152 760 0
+2021-01-02 00:00:02 172.17.100.20 POST /Account/GetJWTToken - 80 - 172.17.100.110 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36 https://admin-uk.synergytrak.com/Items?identifier=1251870&selection=instance 302 0 0 523 882 0
+2021-01-02 00:00:02 172.17.100.20 GET /account/logon targetUrl=%2fAccount%2fGetJWTToken 80 - 172.17.100.110 Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36 https://admin-uk.synergytrak.com/Items?identifier=1251870&selection=instance 200 0 0 2188 849 15
+2021-01-02 00:00:30 172.17.100.20 POST /Production/GetProductionData - 80 - 172.17.100.110 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36 http://admin-uk.synergytrak.com/facility 200 0 0 86379 973 1250
+2021-01-02 00:00:35 172.17.100.20 POST /account/logon targetUrl=%2f 80 - 172.17.0.197 Mozilla/5.0+(compatible;+PRTG+Network+Monitor+(www.paessler.com);+Windows) - 302 0 0 938 458 125
+2021-01-02 00:00:35 172.17.100.20 GET / - 80 - 172.17.0.197 Mozilla/5.0+(compatible;+PRTG+Network+Monitor+(www.paessler.com);+Windows) - 302 0 0 465 721 15
+2021-01-02 00:00:35 172.17.100.20 GET /shared/accessdenied - 80 - 172.17.0.197 Mozilla/5.0+(compatible;+PRTG+Network+Monitor+(www.paessler.com);+Windows) - 200 0 0 68285 740 265
+2021-01-02 00:00:42 172.17.100.20 POST /Account/GetJWTToken - 80 - 172.17.100.110 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://admin-uk.synergytrak.com/Items?identifier=11020873&masterType=ContainerMaster 302 0 0 523 760 46
+2021-01-02 00:00:42 172.17.100.20 GET /account/logon targetUrl=%2fAccount%2fGetJWTToken 80 - 172.17.100.110 Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko http://admin-uk.synergytrak.com/Items?identifier=11020873&masterType=ContainerMaster 200 0 0 2195 769 0
+2021-01-02 00:00:46 172.17.100.20 POST /Account/GetJWTToken - 80 - 172.17.100.110 Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36 https://admin-uk.synergytrak.com/Turnaround/Index/65433540 302 0 0 523 976 15
+test
