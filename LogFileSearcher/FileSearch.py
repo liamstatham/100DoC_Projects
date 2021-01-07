@@ -1,5 +1,8 @@
 import sqlite3
 from datetime import datetime
+import csv
+from xlsxwriter.workbook import Workbook
+
 #Create sqlite database
 conn = sqlite3.connect('logdb.sqlite')
 cur = conn.cursor()
@@ -62,47 +65,51 @@ for lines in file:
 print('Number of records already in the database: ',currentrecords)
 print('Number of records added to database: ',newrecords)
 
-#logid = 1
-#Sql query to print top record
-#response = input('Print top record? y or n: ')
-#if response == 'y':
-#    cur.execute('''SELECT * FROM Logs WHERE LogID = ?''', (logid,))
-#    print('This is row: ', logid)
-#    print(cur.fetchone())
-#    logid = logid + 1
-#else:
-#    print('Program closing.')
-#Query to print next record - will need to associate rows and select next id.
-#Function to return values
+#Function to return database row of relevant logid
 def returnvalues(logid):
-    response = input('Next row? y or n: ')
-#    logid = logid
-    if response == 'y':
-        cur.execute('''SELECT * FROM Logs WHERE LogID = ?''',(logid,))
-        print('This is row: ', logid)
-        print(cur.fetchone())
-#        logid = logid + 1
-#        return logid
-    else:
-        print('Program closing.')
-
-#Call return values Function
-#returnvalues()
+    cur.execute('''SELECT * FROM Logs WHERE LogID = ?''',(logid,))
+    print('This is row: ', logid)
+    print(cur.fetchone())
 
 #loop through rows in table
 cur.execute('''SELECT COUNT(LogID) FROM Logs''')
 rows = cur.fetchone()
 rowsint = rows[0]
 logid = 1
-#print(type(rowsint))
+exit = 0
+
 while logid < rowsint:
-    returnvalues(logid)
-    logid = logid + 1
+    if exit == 1:
+        break
+    else:
+        response = input('Next row? y or n: ')
+        if response == 'y':
+            returnvalues(logid)
+            logid = logid + 1
+        if response == 'n':
+            print('Exiting program')
+            exit = 1
 else:
     print('No more rows.')
 
+printrows = input('Print added rows to CSV? y or n: ')
+if printrows == 'y':
+        print('Adding', rows[0], 'rows to CSV.' )
+#        csvWriter = csv.writer(open("logdb_rows.csv", "w"))
+        workbook = Workbook('logdb_rows.xlsx')
+        worksheet = workbook.add_worksheet()
+        lrows = cur.execute('''SELECT * FROM Logs ORDER BY LogID LIMIT 11''')
+#        csvWriter.writerows(lrows)
+#This is not working... can't write a sqlite cursor to xlsx
+#need to pull each row and write individually...
+        worksheet.write(lrows)
+        workbook.close()
+        print('success.')
+        cur.close()
+else:
+
 #close database connection
-cur.close()
+    cur.close()
 
 
 
