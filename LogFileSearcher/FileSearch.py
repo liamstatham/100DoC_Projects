@@ -1,11 +1,12 @@
 import sqlite3
 from datetime import datetime
 import csv
-from xlsxwriter.workbook import Workbook
 
 #Create sqlite database
-conn = sqlite3.connect('logdb.sqlite')
+conn = sqlite3.connect('logdb.sqlite', isolation_level='DEFERRED')
 cur = conn.cursor()
+cur.execute('''PRAGMA synchronous = OFF''')
+cur.execute('''PRAGMA journal_mode = OFF''')
 
 #Create logs table
 cur.execute('''
@@ -22,10 +23,12 @@ CREATE TABLE if not exists Logs (
     TimeTaken INTEGER
 ); ''')
 
+
 #Open file
 fname = input('Enter file name: ')
 if len(fname) < 1: fname = 'u_ex210102.log'
 file = open(fname)
+print('Adding log to db...')
 
 #Variables for new and current records in the database
 newrecords = 0
@@ -95,16 +98,11 @@ else:
 printrows = input('Print added rows to CSV? y or n: ')
 if printrows == 'y':
         print('Adding', rows[0], 'rows to CSV.' )
-#        csvWriter = csv.writer(open("logdb_rows.csv", "w"))
-        workbook = Workbook('logdb_rows.xlsx')
-        worksheet = workbook.add_worksheet()
-        lrows = cur.execute('''SELECT * FROM Logs ORDER BY LogID LIMIT 11''')
-#        csvWriter.writerows(lrows)
-#This is not working... can't write a sqlite cursor to xlsx
-#need to pull each row and write individually...
-        worksheet.write(lrows)
-        workbook.close()
-        print('success.')
+        csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
+        lrows = cur.execute('''SELECT * FROM Logs ORDER BY LogID''')
+        csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'Port' ,'IP' ,'UserAgent' ,'URL' ,'TimeTaken (ms)'] )
+        csvWriter.writerows(lrows)
+        print('successfly created logdb_rows.csv.')
         cur.close()
 else:
 
