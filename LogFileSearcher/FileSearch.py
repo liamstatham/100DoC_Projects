@@ -26,15 +26,20 @@ CREATE TABLE if not exists Logs (
 ); ''')
 
 #Open file
-fname = input('Enter file name: ')
-if len(fname) < 1: fname = 'u_ex210102.log'
-try:
-    file = open(fname)
-    print('Adding logs to db...')
-except:
-    print('File with that name does not exist in this directory.')
-    print('Please open the program and try again.')
-    sys.exit(0)
+
+exit = 0
+while exit == 0:
+    fname = input('Enter file name: ')
+    if len(fname) < 1: fname = 'u_ex210102.log'
+    try:
+        file = open(fname)
+        print('Adding logs to db...')
+        exit = 1
+    except:
+        print('File with that name does not exist in this directory.')
+        print('Please open the program and try again.')
+        print()
+    #    sys.exit(0)
 
 #Variables for new and current records in the database
 newrecords = 0
@@ -65,7 +70,7 @@ print('Number of logs added to database: ',newrecords)
 def returnvalues(logid):
     cur.execute('''SELECT * FROM Logs WHERE LogID = ?''',(logid,))
     print('This is row: ', logid)
-    cur.fetchone()
+    print(cur.fetchone())
 
 #loop through rows in table
 cur.execute('''SELECT COUNT(LogID) FROM Logs''')
@@ -81,41 +86,61 @@ while logid < rowsint:
         if response == 'y':
             returnvalues(logid)
             logid = logid + 1
-        if response == 'n':
+        elif response == 'n':
             exit = 1
+        else:
+            print('Incorrect entry, please use Y or N.')
+            print()
 else:
     print('No more rows.')
 
-searchURL = input('Search in URL (turnaroundID/ContainerMasterId etc)? y or n: ')
-if searchURL == 'y':
-    term = input('Type search term between wildcards %... eg: %test%: ')
-    cur.execute('''SELECT count(LogID) FROM Logs WHERE URL LIKE ?''',(term,))
-    scount = cur.fetchone()
-    print('There are',scount[0],'results.')
-    resultcsv = input('Print results to CSV? y or n: ')
-    if resultcsv == 'y':
-        print('Adding', scount[0], 'rows to CSV.' )
-        csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
-        lrows = cur.execute('''SELECT * FROM Logs WHERE URL LIKE ?''',(term,))
-        csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'Port' ,'IP' ,'UserAgent' ,'URL' ,'TimeTaken (ms)'] )
-        csvWriter.writerows(lrows)
-        print('Successfully created logdb_rows.csv.')
-        cur.close()
-        sys.exit(0)
+#Search through database to filter results to CSV
+exit = 0
+while exit == 0:
+    searchURL = input('Search in URL (turnaroundID/ContainerMasterId etc)? y or n: ')
+    if searchURL == 'y':
+        term = input('Type search term between wildcards %... eg: %test%: ')
+        cur.execute('''SELECT count(LogID) FROM Logs WHERE URL LIKE ?''',(term,))
+        scount = cur.fetchone()
+        print('There are',scount[0],'results.')
+        resultcsv = input('Print results to CSV? y or n: ')
+        if resultcsv == 'y':
+            print('Adding', scount[0], 'rows to CSV.' )
+            csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
+            lrows = cur.execute('''SELECT * FROM Logs WHERE URL LIKE ?''',(term,))
+            csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'Port' ,'IP' ,'UserAgent' ,'URL' ,'TimeTaken (ms)'] )
+            csvWriter.writerows(lrows)
+            print('Successfully created logdb_rows.csv.')
+            cur.close()
+            sys.exit(0)
+        elif resultcsv == 'n':
+            exit = 1
+        else:
+            print('Incorrect entry, please use Y or N.')
+            print()
+    elif searchURL == 'n':
+        exit = 1
     else:
+        print('Incorrect entry, please use Y or N.')
         print()
 
 #Below prints rows to CSV file
-printrows = input('Print full database to CSV? y or n: ')
-if printrows == 'y':
-        print('Adding', rows[0], 'rows to CSV.' )
-        csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
-        lrows = cur.execute('''SELECT * FROM Logs ORDER BY LogID''')
-        csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'Port' ,'IP' ,'UserAgent' ,'URL' ,'TimeTaken (ms)'] )
-        csvWriter.writerows(lrows)
-        print('Successfully created logdb_rows.csv.')
+exit = 0
+while exit == 0:
+    printrows = input('Print full database to CSV? y or n: ')
+    if printrows == 'y':
+            print('Adding', rows[0], 'rows to CSV.' )
+            csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
+            lrows = cur.execute('''SELECT * FROM Logs ORDER BY LogID''')
+            csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'Port' ,'IP' ,'UserAgent' ,'URL' ,'TimeTaken (ms)'] )
+            csvWriter.writerows(lrows)
+            print('Successfully created logdb_rows.csv.')
+            cur.close()
+    elif printrows == 'n':
+    #close database connection
+        print('Closing program.')
         cur.close()
-else:
-#close database connection
-    print('Closing program.')
-    cur.close()
+        sys.exit(0)
+    else:
+        print('Incorrect entry, please use Y or N.')
+        print()
