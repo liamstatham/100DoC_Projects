@@ -3,6 +3,7 @@ from datetime import datetime
 import csv
 import sys
 from pathlib import Path
+import os
 
 #Create sqlite database
 conn = sqlite3.connect('logdb.sqlite', isolation_level='DEFERRED')
@@ -37,7 +38,7 @@ while exit == 0:
     #Use os path join to add path of parent directory and filename
     path = os.path.join(d, fname)
     try:
-        file = open(fname)
+        file = open(path)
         print('Adding logs to db...')
         exit = 1
     except:
