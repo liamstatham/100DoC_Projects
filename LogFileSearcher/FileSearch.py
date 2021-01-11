@@ -2,6 +2,7 @@ import sqlite3
 from datetime import datetime
 import csv
 import sys
+from pathlib import Path
 
 #Create sqlite database
 conn = sqlite3.connect('logdb.sqlite', isolation_level='DEFERRED')
@@ -25,12 +26,16 @@ CREATE TABLE if not exists Logs (
     TimeTaken INTEGER
 ); ''')
 
-#Open file
+#Get parent path of directory
+d = Path().resolve().parent
 
+#Open file
 exit = 0
 while exit == 0:
     fname = input('Enter file name: ')
     if len(fname) < 1: fname = 'u_ex210102.log'
+    #Use os path join to add path of parent directory and filename
+    path = os.path.join(d, fname)
     try:
         file = open(fname)
         print('Adding logs to db...')
