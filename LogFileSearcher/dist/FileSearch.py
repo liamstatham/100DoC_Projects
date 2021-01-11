@@ -142,6 +142,7 @@ while exit == 0:
             csvWriter.writerows(lrows)
             print('Successfully created logdb_rows.csv.')
             cur.close()
+            exit = 1
     elif printrows == 'n':
     #close database connection
         print('Closing program.')
