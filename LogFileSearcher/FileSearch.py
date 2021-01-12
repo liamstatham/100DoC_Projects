@@ -73,7 +73,7 @@ for lines in file:
 
 print('Number of logs added to database: ',newrecords)
 
-#Function to return database row of relevant logid
+#Function to return database row of relevant logid 
 def returnvalues(logid):
     cur.execute('''SELECT * FROM Logs WHERE LogID = ?''',(logid,))
     print('This is row: ', logid)
