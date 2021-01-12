@@ -33,7 +33,8 @@ d = Path().resolve().parent
 #Open file
 exit = 0
 while exit == 0:
-    fname = input('Enter file name: ')
+    print('This program searches the parent directory for a .log file')
+    fname = input('Enter file name with .log: ')
     if len(fname) < 1: fname = 'u_ex210102.log'
     #Use os path join to add path of parent directory and filename
     path = os.path.join(d, fname)
@@ -88,7 +89,7 @@ while logid < rowsint:
     if exit == 1:
         break
     else:
-        response = input('Next row? y or n: ')
+        response = input('Next row? (y/n): ')
         if response == 'y':
             returnvalues(logid)
             logid = logid + 1
@@ -103,13 +104,13 @@ else:
 #Search through database to filter results to CSV
 exit = 0
 while exit == 0:
-    searchURL = input('Search in URL (turnaroundID/ContainerMasterId etc)? y or n: ')
+    searchURL = input('Search in URL (turnaroundID/ContainerMasterId etc)? (y/n): ')
     if searchURL == 'y':
         term = input('Type search term between wildcards %... eg: %test%: ')
         cur.execute('''SELECT count(LogID) FROM Logs WHERE URL LIKE ?''',(term,))
         scount = cur.fetchone()
         print('There are',scount[0],'results.')
-        resultcsv = input('Print results to CSV? y or n: ')
+        resultcsv = input('Print results to CSV? (y/n): ')
         if resultcsv == 'y':
             print('Adding', scount[0], 'rows to CSV.' )
             csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
@@ -133,7 +134,7 @@ while exit == 0:
 #Below prints rows to CSV file
 exit = 0
 while exit == 0:
-    printrows = input('Print full database to CSV? y or n: ')
+    printrows = input('Print full database to CSV? (y/n): ')
     if printrows == 'y':
             print('Adding', rows[0], 'rows to CSV.' )
             csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
