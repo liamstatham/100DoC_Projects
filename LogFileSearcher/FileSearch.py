@@ -23,8 +23,7 @@ CREATE TABLE if not exists Logs (
     Port INTEGER,
     IP TEXT,
     UserAgent TEXT,
-    URL TEXT,
-    TimeTaken INTEGER
+    URL TEXT
 ); ''')
 
 #Get parent path of directory
@@ -62,18 +61,18 @@ for lines in file:
     fulldate = (bigdate + ' ' + time)
     dt = datetime.fromisoformat(fulldate)
 #Above converts part 0 and 1 from log file line to a full date. using datetime
-    port = int(line[6])
-    timetaken = int(line[16])
+#    port = int(line[6])
+#    timetaken = int(line[16])
     cur.execute(
-    '''INSERT INTO Logs (Created, Method, UriStem, UriQuery, Port, IP, UserAgent, URL, TimeTaken)
-    VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?)''',
-    (dt, line[3], line[4], line[5], port, line[8], line[9], line[10], timetaken))
+    '''INSERT INTO Logs (Created, Method, UriStem, UriQuery, IP, UserAgent, URL)
+    VALUES(?, ?, ?, ?, ?, ?, ?)''',
+    (dt, line[3], line[4], line[5], line[8], line[9], line[10]))
     newrecords = newrecords + 1
     conn.commit()
 
 print('Number of logs added to database: ',newrecords)
 
-#Function to return database row of relevant logid 
+#Function to return database row of relevant logid
 def returnvalues(logid):
     cur.execute('''SELECT * FROM Logs WHERE LogID = ?''',(logid,))
     print('This is row: ', logid)
@@ -115,7 +114,7 @@ while exit == 0:
             print('Adding', scount[0], 'rows to CSV.' )
             csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
             lrows = cur.execute('''SELECT * FROM Logs WHERE URL LIKE ?''',(term,))
-            csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'Port' ,'IP' ,'UserAgent' ,'URL' ,'TimeTaken (ms)'] )
+            csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'IP' ,'UserAgent' ,'URL'] )
             csvWriter.writerows(lrows)
             print('Successfully created logdb_rows.csv.')
             cur.close()
@@ -139,7 +138,7 @@ while exit == 0:
             print('Adding', rows[0], 'rows to CSV.' )
             csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
             lrows = cur.execute('''SELECT * FROM Logs ORDER BY LogID''')
-            csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'Port' ,'IP' ,'UserAgent' ,'URL' ,'TimeTaken (ms)'] )
+            csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'IP' ,'UserAgent' ,'URL'] )
             csvWriter.writerows(lrows)
             print('Successfully created logdb_rows.csv.')
             cur.close()

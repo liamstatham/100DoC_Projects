@@ -52,7 +52,7 @@ print('Attempting to append to 1 df.')
 adf = df.append([df1,df2,df3], ignore_index = True)
 #Create CSV file for all data
 print('Creating big csv')
-adf.to_csv('all_data.csv')
+adf.to_csv('all_data_1.csv', index=False)
 print('complete')
 
 
