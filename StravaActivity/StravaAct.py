@@ -10,7 +10,7 @@ url = "https://www.strava.com/api/v3/activities"
 access_token = strava_tokens['access_token']
 
 #loop through all activities on strava
-page = 1
+page = 0
 r = requests.get(url + '?access_token=' + access_token)
 r = r.json()
 
@@ -18,50 +18,42 @@ r = r.json()
 #Add data to the dataframe per page
 while True:
     # get page of activities from Strava
+    page = page + 1
     r = requests.get(url + '?access_token=' + access_token + '&per_page=200' + '&page=' + str(page))
     r = r.json()
+    print('json request returned.')
 
     # if no results then exit loop
     if (not r):
+        print('json request empty.')
         break
-
-#this doesn't work, as it adds the last page to dataframe but wipes out previous dataviz
-#need to find a way to continually add data to dataframe
-#maybe append
+#Loop through pages and add the page of 200 json results to a dataframe
     if page == 1:
         df = pd.json_normalize(r)
+        print('Data Frame created')
         print('Page',page,'complete.')
-        page = page + 1
-    else:
-        if page == 2:
-            df1 = pd.json_normalize(r)
-            print('Page',page,'complete.')
-            df.append(df1)
-            print('Append to data frame complete.')
-            page = page + 1
-        else:
-            if page == 3:
-                df2 = pd.json_normalize(r)
-                print('Page',page,'complete.')
-                df.append(df2)
-                print('Append to data frame complete.')
-                page = page + 1
-            else:
-                if page == 4:
-                    df3 = pd.json_normalize(r)
-                    print('Page',page,'complete.')
-                    df.append(df3)
-                    print('Append to data frame complete.')
-                    page = page + 1
-                else:
-                    if page == 5:
-                        df4 = pd.json_normalize(r)
-                        print('Page',page,'complete.')
-                        df.append(df4)
-                        print('Append to data frame complete.')
-                        page = page + 1
+    elif page == 2:
+        df1 = pd.json_normalize(r)
+        print('Page',page,'complete.')
+    elif page == 3:
+        df2 = pd.json_normalize(r)
+        print('Page',page,'complete.')
+    elif page == 4:
+        df3 = pd.json_normalize(r)
+        print('Page',page,'complete.')
+#    elif page == 5:
+#        df4 = pd.json_normalize(r)
+#        print('Page',page,'complete.')
+#        df.append(df4)
+#        print('Append to data frame complete.')
 
-#data fields
-#df = pd.json_normalize(r)
-print('Creating CSV.')
-df.to_csv('all_activities_all_fields.csv')
+#append all data frames together, ignoring index (so row id's incrememnt normally)
+print('Attempting to append to 1 df.')
+adf = df.append([df1,df2,df3], ignore_index = True)
+#Create CSV file for all data
+print('Creating big csv')
+adf.to_csv('all_data.csv')
+print('complete')
+
+
+#0361771416ae5767cd7e57987e51582b91fad240
