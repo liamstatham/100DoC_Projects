@@ -1,0 +1,12 @@
+LogID,Created,Method,UriStem,UriQuery,IP,UserAgent,URL
+1,2021-01-02 00:00:00,POST,/Account/GetJWTToken,-,,172.17.100.110,"Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36",http://admin-uk.synergytrak.com/facility
+2,2021-01-02 00:00:00,GET,/account/logon,targetUrl=%2fAccount%2fGetJWTToken,,172.17.100.110,"Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36",http://admin-uk.synergytrak.com/facility
+3,2021-01-02 00:00:02,POST,/Account/GetJWTToken,-,,172.17.100.110,"Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36",https://admin-uk.synergytrak.com/Items?identifier=1251870&selection=instance
+4,2021-01-02 00:00:02,GET,/account/logon,targetUrl=%2fAccount%2fGetJWTToken,,172.17.100.110,"Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36",https://admin-uk.synergytrak.com/Items?identifier=1251870&selection=instance
+5,2021-01-02 00:00:30,POST,/Production/GetProductionData,-,,172.17.100.110,"Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36",http://admin-uk.synergytrak.com/facility
+6,2021-01-02 00:00:35,POST,/account/logon,targetUrl=%2f,,172.17.0.197,Mozilla/5.0+(compatible;+PRTG+Network+Monitor+(www.paessler.com);+Windows),-
+7,2021-01-02 00:00:35,GET,/,-,,172.17.0.197,Mozilla/5.0+(compatible;+PRTG+Network+Monitor+(www.paessler.com);+Windows),-
+8,2021-01-02 00:00:35,GET,/shared/accessdenied,-,,172.17.0.197,Mozilla/5.0+(compatible;+PRTG+Network+Monitor+(www.paessler.com);+Windows),-
+9,2021-01-02 00:00:42,POST,/Account/GetJWTToken,-,,172.17.100.110,Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko,http://admin-uk.synergytrak.com/Items?identifier=11020873&masterType=ContainerMaster
+10,2021-01-02 00:00:42,GET,/account/logon,targetUrl=%2fAccount%2fGetJWTToken,,172.17.100.110,Mozilla/5.0+(Windows+NT+6.1;+WOW64;+Trident/7.0;+rv:11.0)+like+Gecko,http://admin-uk.synergytrak.com/Items?identifier=11020873&masterType=ContainerMaster
+11,2021-01-02 00:00:46,POST,/Account/GetJWTToken,-,,172.17.100.110,"Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36",https://admin-uk.synergytrak.com/Turnaround/Index/65433540

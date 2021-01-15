@@ -28,6 +28,8 @@ CREATE TABLE if not exists Logs (
 
 #Get parent path of directory
 d = Path().resolve().parent
+#datefile = datetime.now().strftime("%y%m%d%H%M")
+
 
 #Open file
 exit = 0
@@ -46,7 +48,9 @@ while exit == 0:
         print('Please open the program and try again.')
         print()
     #    sys.exit(0)
-
+filename = fname.rstrip(".log")
+csvname = filename + '_log.csv'
+csvfile = os.path.join(d, csvname)
 #Variables for new and current records in the database
 newrecords = 0
 currentrecords = 0
@@ -112,11 +116,12 @@ while exit == 0:
         resultcsv = input('Print results to CSV? (y/n): ')
         if resultcsv == 'y':
             print('Adding', scount[0], 'rows to CSV.' )
-            csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
+            csvWriter = csv.writer(open(csvfile, "w", newline = ''))
             lrows = cur.execute('''SELECT * FROM Logs WHERE URL LIKE ?''',(term,))
             csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'IP' ,'UserAgent' ,'URL'] )
             csvWriter.writerows(lrows)
-            print('Successfully created logdb_rows.csv.')
+            print('Successfully created: ', csvfile)
+            input()
             cur.close()
             sys.exit(0)
         elif resultcsv == 'n':
@@ -136,11 +141,12 @@ while exit == 0:
     printrows = input('Print full database to CSV? (y/n): ')
     if printrows == 'y':
             print('Adding', rows[0], 'rows to CSV.' )
-            csvWriter = csv.writer(open("logdb_rows.csv", "w", newline = ''))
+            csvWriter = csv.writer(open(csvfile, "w", newline = ''))
             lrows = cur.execute('''SELECT * FROM Logs ORDER BY LogID''')
             csvWriter.writerow(['LogID', 'Created','Method' ,'UriStem','UriQuery' ,'IP' ,'UserAgent' ,'URL'] )
             csvWriter.writerows(lrows)
-            print('Successfully created logdb_rows.csv.')
+            print('Successfully created: ', csvfile)
+            input()
             cur.close()
             exit = 1
     elif printrows == 'n':
