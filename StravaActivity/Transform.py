@@ -18,8 +18,9 @@ df = pd.read_csv(path)
 #User first 5 columns in dataframe [id, name, distance, moving_time, elapsed_time]
 cols = ['distance','moving_time','type']
 #print(df[cols])
-run = df['type'] = 'Run'
-print(run)
+#run = df['type'] = 'Run' 
+print(df.shape)
+
 
 
 
