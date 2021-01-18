@@ -1,0 +1,3 @@
+df1['moving_time'] = df['moving_time'].div(60).round(2)
+df1['moving_time'].div(60).round(2)
+df1
