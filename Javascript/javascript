@@ -1,0 +1,6 @@
+funtion myTest(arg) {
+    console.log(arg);
+}
+
+myTest(hi);
+
