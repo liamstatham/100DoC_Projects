@@ -23,5 +23,17 @@ namespace GradeBook.Tests
             Assert.Equal(77.3, result.Low, 1);
 
         }
+
+        [Fact]
+        public void TestName()
+        {
+        //Given
+        var book = new Book("Grade book");
+       // var actual = book.AddGrade(105.0);        
+        //When
+        //var expected = "Invalid value";
+        //Then
+        //Assert.Equal(expected, actual);
+        }
     }
 }
