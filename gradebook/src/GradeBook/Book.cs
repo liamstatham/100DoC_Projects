@@ -82,6 +82,10 @@ namespace GradeBook
             }
 
             private List<double> grades;
-            public string Name;
+            //property member
+            public string Name 
+            {
+                get; private set;
+            }
     }
 }

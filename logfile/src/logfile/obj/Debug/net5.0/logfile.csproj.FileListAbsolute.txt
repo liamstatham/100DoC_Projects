@@ -1,0 +1,16 @@
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\bin\Debug\net5.0\logfile.exe
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\bin\Debug\net5.0\logfile.deps.json
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\bin\Debug\net5.0\logfile.runtimeconfig.json
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\bin\Debug\net5.0\logfile.runtimeconfig.dev.json
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\bin\Debug\net5.0\logfile.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\bin\Debug\net5.0\ref\logfile.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\bin\Debug\net5.0\logfile.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\obj\Debug\net5.0\logfile.csprojAssemblyReference.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\obj\Debug\net5.0\logfile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\obj\Debug\net5.0\logfile.AssemblyInfoInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\obj\Debug\net5.0\logfile.AssemblyInfo.cs
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\obj\Debug\net5.0\logfile.csproj.CoreCompileInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\obj\Debug\net5.0\logfile.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\obj\Debug\net5.0\ref\logfile.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\obj\Debug\net5.0\logfile.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\logfile\obj\Debug\net5.0\logfile.genruntimeconfig.cache
