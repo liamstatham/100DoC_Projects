@@ -1,0 +1,5 @@
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\obj\Debug\net5.0\src.csprojAssemblyReference.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\obj\Debug\net5.0\src.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\obj\Debug\net5.0\src.AssemblyInfoInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\obj\Debug\net5.0\src.AssemblyInfo.cs
+C:\Users\Liam_Statham\github\100DoC_Projects\logfile\src\obj\Debug\net5.0\src.csproj.CoreCompileInputs.cache

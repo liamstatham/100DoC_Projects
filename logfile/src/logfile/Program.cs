@@ -8,8 +8,15 @@ namespace logfile
         {
             System.Console.WriteLine("Please type the log file name:");
             var fname = Console.ReadLine();
+            var file = new OpenFile();
 
-            var fhand = new OpenFile(fname);
+            file.fhand(fname);
+            file.IntoLines();
+            file.IntoWords();
+
+
+
+
         }
     }
 
