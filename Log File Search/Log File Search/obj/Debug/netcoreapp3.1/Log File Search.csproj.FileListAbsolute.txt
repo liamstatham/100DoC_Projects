@@ -1,0 +1,17 @@
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\bin\Debug\netcoreapp3.1\Log File Search.exe
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\bin\Debug\netcoreapp3.1\Log File Search.deps.json
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\bin\Debug\netcoreapp3.1\Log File Search.runtimeconfig.json
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\bin\Debug\netcoreapp3.1\Log File Search.runtimeconfig.dev.json
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\bin\Debug\netcoreapp3.1\Log File Search.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\bin\Debug\netcoreapp3.1\Log File Search.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\obj\Debug\netcoreapp3.1\Log File Search.AssemblyInfoInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\obj\Debug\netcoreapp3.1\Log File Search.AssemblyInfo.cs
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\obj\Debug\netcoreapp3.1\Log File Search.csproj.CoreCompileInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\obj\Debug\netcoreapp3.1\Log File Search.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\obj\Debug\netcoreapp3.1\Log File Search.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\obj\Debug\netcoreapp3.1\Log File Search.genruntimeconfig.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\bin\Debug\netcoreapp3.1\Apache.Arrow.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\bin\Debug\netcoreapp3.1\Microsoft.Data.Analysis.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\bin\Debug\netcoreapp3.1\Microsoft.ML.DataView.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\obj\Debug\netcoreapp3.1\Log File Search.csprojAssemblyReference.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\obj\Debug\netcoreapp3.1\Log File Search.csproj.CopyComplete
