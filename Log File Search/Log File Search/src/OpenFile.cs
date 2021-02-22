@@ -12,26 +12,32 @@ namespace Log_File_Search
             Console.WriteLine(dir);
             string dir1 = @"C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\";
             string file = dir1 + name;
-            Name = file;
+            File = file;
+            Name = name;
             return Name;
         }
         public Array IntoLines()
         {
             //Name = name;
-            Console.WriteLine($"Your file name is {Name}");
+            Console.WriteLine($"Your file name is {File}");
             try
             {
                 // Create an instance of StreamReader to read from a file.
                 // The using statement also closes the StreamReader.
-                using (StreamReader sr = new StreamReader(Name))
+                using (StreamReader sr = new StreamReader(File))
                 {
+                    // new instance of a datatable -- to do
+                    DataTable(Name);
                     string line;
                     // Read and display lines from the file until the end of
                     // the file is reached.
                     while ((line = sr.ReadLine()) != null)
                     {
-                        // Splits the document into lines of text using the env NewLine 
-                        Lines = line.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
+                        // Splits the document into words
+                        var linesp = line.Split(' ');
+                        // passes words from line into method, per line
+                        IntoDataTable(linesp);
+
                     }
                 }
             }
@@ -41,14 +47,18 @@ namespace Log_File_Search
                 Console.WriteLine("The file could not be read:");
                 Console.WriteLine(e.Message);
             }
+            
             return Lines;
         }
-        public void IntoWords()
+        public void IntoDataTable(string[] linesp)
         {
-            Console.WriteLine(Lines);
+            // need to write a method to put words from line into data table
+            var bigdate = linesp[0] + ' ' + linesp[1];
+
+            Console.WriteLine(bigdate + ' ' + linesp[3] + ' ' + linesp[4] + ' ' + linesp[5] + ' ' + linesp[8] + ' ' + linesp[9] + ' ' + linesp[10]);
             //var i = 0;
             //var x = Lines.Length;
-            
+
             //while (i <= x)
             ////{
             ////    Words = Lines[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
@@ -62,11 +72,18 @@ namespace Log_File_Search
             //    //Console.WriteLine($"{i} : {Words}");
             //}
 
-               // return Words;
+            // return Words;
+        }
+
+        public void DataTable(string Name)
+        {
+            // need to create a data table
+            Console.WriteLine(Name);
         }
         public List<string> List;
         public string[] Words;
         public string[] Lines;
         public string Name;
+        public string File;
     }
 }

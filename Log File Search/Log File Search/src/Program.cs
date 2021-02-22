@@ -12,7 +12,7 @@ namespace Log_File_Search
 
             file.fhand(fname);
             file.IntoLines();
-            file.IntoWords();
+            //file.IntoWords();
         }
     }
 }
