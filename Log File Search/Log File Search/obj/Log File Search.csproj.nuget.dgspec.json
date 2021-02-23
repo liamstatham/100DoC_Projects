@@ -46,6 +46,14 @@
             "Microsoft.Data.Analysis": {
               "target": "Package",
               "version": "[0.4.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.113.7, )"
+            },
+            "sqlite": {
+              "target": "Package",
+              "version": "[3.13.0, )"
             }
           },
           "imports": [

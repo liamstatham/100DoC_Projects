@@ -78,12 +78,27 @@ namespace Log_File_Search
         public void DataTable(string Name)
         {
             // need to create a data table
-            Console.WriteLine(Name);
+            // splitting on the . removes the dot, so use the sub 0 [0]
+            // Try splitting the name
+            try
+            {
+                string[] splitname = Name.Split('.');
+                var datatablename = splitname[0];
+                Console.WriteLine($"The data table name is: {datatablename}");
+                DataTableName = datatablename;
+            }
+            catch (Exception e)
+            {
+                // Let the user know what went wrong.
+                Console.WriteLine($"The file name was missing a . {Name}");
+                Console.WriteLine(e.Message);
+            }
         }
-        public List<string> List;
-        public string[] Words;
+       // public List<string> List;
+        //public string[] Words;
         public string[] Lines;
         public string Name;
         public string File;
+        public string DataTableName;
     }
 }
