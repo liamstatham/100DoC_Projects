@@ -11,8 +11,8 @@ namespace Log_File_Search
             var file = new OpenFile();
 
             file.fhand(fname);
-            file.DataTable(fname);
-            //file.IntoLines();
+            //file.DataTable(fname);
+            file.IntoLines();
             //file.IntoWords();
         }
     }

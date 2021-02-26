@@ -9,7 +9,7 @@ namespace GradeBook.Tests
         public void BookCalculatesAnAverageGrade()
         {
             // Arrange
-            var book = new Book("");
+            var book = new InMemoryBook("");
             book.AddGrade(89.1);
             book.AddGrade(90.5);
             book.AddGrade(77.3);
@@ -29,7 +29,7 @@ namespace GradeBook.Tests
         public void TestName()
         {
         //Given
-        var book = new Book("Grade book");
+        var book = new InMemoryBook("Grade book");
        // var actual = book.AddGrade(105.0);        
         //When
         //var expected = "Invalid value";

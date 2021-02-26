@@ -12,19 +12,19 @@ namespace Log_File_Search
             Console.WriteLine(dir);
             string dir1 = @"C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\";
             string file = dir1 + name;
-            File = file;
+            FileH = file;
             Name = name;
             return Name;
         }
         public Array IntoLines()
         {
             //Name = name;
-            Console.WriteLine($"Your file name is {File}");
+            Console.WriteLine($"Your file name is {FileH}");
             try
             {
                 // Create an instance of StreamReader to read from a file.
                 // The using statement also closes the StreamReader.
-                using (StreamReader sr = new StreamReader(File))
+                using (StreamReader sr = new StreamReader(FileH))
                 {
                     // new instance of a datatable -- to do
                     DataTable(Name);
@@ -53,6 +53,12 @@ namespace Log_File_Search
         public void IntoDataTable(string[] linesp)
         {
             // need to write a method to put words from line into data table
+             using (var writer = File.OpenWrite($"{DataTableName}.csv"))
+                    {
+                    // this needs to work
+                    File.AppendAllLines
+                    }
+
             var bigdate = linesp[0] + ' ' + linesp[1];
 
             Console.WriteLine(bigdate + ' ' + linesp[3] + ' ' + linesp[4] + ' ' + linesp[5] + ' ' + linesp[8] + ' ' + linesp[9] + ' ' + linesp[10]);
@@ -86,6 +92,20 @@ namespace Log_File_Search
                 var datatablename = splitname[0];
                 Console.WriteLine($"The data table name is: {datatablename}");
                 DataTableName = datatablename;
+                if (File.Exists($"{DataTableName}.csv") != true)
+                {
+                    using (var writer = File.OpenWrite($"{DataTableName}.csv"))
+                    {
+                        Console.WriteLine($"File {DataTableName}.csv has been created.");
+                        // need to write file headings
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine($"File {DataTableName}.csv already exits."); 
+                }
+                
             }
             catch (Exception e)
             {
@@ -98,7 +118,7 @@ namespace Log_File_Search
         //public string[] Words;
         public string[] Lines;
         public string Name;
-        public string File;
+        public string FileH;
         public string DataTableName;
     }
 }
