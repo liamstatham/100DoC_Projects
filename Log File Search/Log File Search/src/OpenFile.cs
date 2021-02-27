@@ -16,7 +16,7 @@ namespace Log_File_Search
             Name = name;
             return Name;
         }
-        public Array IntoLines()
+        public Array AddToCsv()
         {
             //Name = name;
             Console.WriteLine($"Your file name is {FileH}");
@@ -27,8 +27,9 @@ namespace Log_File_Search
                 using (StreamReader sr = new StreamReader(FileH))
                 {
                     // new instance of a datatable -- to do
-                    DataTable(Name);
+                    CreateCSV(Name);
                     string line;
+                    var count = 0;
                     // Read and display lines from the file until the end of
                     // the file is reached.
                     while ((line = sr.ReadLine()) != null)
@@ -36,9 +37,11 @@ namespace Log_File_Search
                         // Splits the document into words
                         var linesp = line.Split(' ');
                         // passes words from line into method, per line
-                        IntoDataTable(linesp);
+                        IntoCSV(linesp);
+                        count += 1;
 
                     }
+                    Console.WriteLine($"{count} lines have been added to csv {CsvName}.csv.");
                 }
             }
             catch (Exception e)
@@ -50,38 +53,7 @@ namespace Log_File_Search
             
             return Lines;
         }
-        public void IntoDataTable(string[] linesp)
-        {
-            // need to write a method to put words from line into data table
-             using (var writer = File.OpenWrite($"{DataTableName}.csv"))
-                    {
-                    // this needs to work
-                    File.AppendAllLines
-                    }
-
-            var bigdate = linesp[0] + ' ' + linesp[1];
-
-            Console.WriteLine(bigdate + ' ' + linesp[3] + ' ' + linesp[4] + ' ' + linesp[5] + ' ' + linesp[8] + ' ' + linesp[9] + ' ' + linesp[10]);
-            //var i = 0;
-            //var x = Lines.Length;
-
-            //while (i <= x)
-            ////{
-            ////    Words = Lines[i].Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            ////    i += 1;
-            ////    Console.WriteLine($"{i} : {Words}");
-            ////    continue;
-            ////}
-            //{
-            //    List.Add(Lines[i]);
-            //    i += 1;
-            //    //Console.WriteLine($"{i} : {Words}");
-            //}
-
-            // return Words;
-        }
-
-        public void DataTable(string Name)
+        public void CreateCSV(string Name)
         {
             // need to create a data table
             // splitting on the . removes the dot, so use the sub 0 [0]
@@ -89,23 +61,32 @@ namespace Log_File_Search
             try
             {
                 string[] splitname = Name.Split('.');
-                var datatablename = splitname[0];
-                Console.WriteLine($"The data table name is: {datatablename}");
-                DataTableName = datatablename;
-                if (File.Exists($"{DataTableName}.csv") != true)
+                var csvName = splitname[0];
+                Console.WriteLine($"The data table name is: {csvName}");
+                CsvName = csvName;
+                var DataFile = CsvName + ".csv";
+                if (File.Exists($"{CsvName}.csv") != true)
                 {
-                    using (var writer = File.OpenWrite($"{DataTableName}.csv"))
+                    using (var writer = File.OpenWrite($"{CsvName}.csv"))
                     {
-                        Console.WriteLine($"File {DataTableName}.csv has been created.");
-                        // need to write file headings
+                        Console.WriteLine($"File {CsvName}.csv has been created.");
+                    }
+                    // need to write file headings
+                    using (FileStream fs = new FileStream(DataFile, FileMode.Append, FileAccess.Write))
+                    {
+                        using (StreamWriter sw = new StreamWriter(fs))
+                        {
+                            var headings = "Created" + "," + "Method" + "," + "UriStem" + "," + "UriQuery" + "," + "IP" + "," + "UserAgent" + "," + "URL";
+                            sw.WriteLine(headings);
+                        }
                     }
 
                 }
                 else
                 {
-                    Console.WriteLine($"File {DataTableName}.csv already exits."); 
+                    Console.WriteLine($"File {CsvName}.csv already exits.");
                 }
-                
+
             }
             catch (Exception e)
             {
@@ -114,11 +95,37 @@ namespace Log_File_Search
                 Console.WriteLine(e.Message);
             }
         }
-       // public List<string> List;
+
+        public void IntoCSV(string[] linesp)
+        {
+            var DataFile = CsvName + ".csv";
+            // need to write a method to put words from line into data table
+            // split linesp into human readable vars
+            var bigdate = linesp[0] + ' ' + linesp[1];
+            var method = linesp[3];
+            var uriStem = linesp[4];
+            var uriQuery = linesp[5];
+            var ip = linesp[8];
+            var userAgent = linesp[9];
+            var url = linesp[10];
+
+            var lineToWrite = bigdate + "," + method + "," + uriStem + "," + uriQuery + "," + ip + "," + userAgent + "," + url;
+
+            using (FileStream fs = new FileStream(DataFile, FileMode.Append, FileAccess.Write))
+            {
+                using (StreamWriter sw = new StreamWriter(fs))
+                {
+                    sw.WriteLine(lineToWrite);
+                }
+            }
+        }
+
+
+        // public List<string> List;
         //public string[] Words;
         public string[] Lines;
         public string Name;
         public string FileH;
-        public string DataTableName;
+        public string CsvName;
     }
 }

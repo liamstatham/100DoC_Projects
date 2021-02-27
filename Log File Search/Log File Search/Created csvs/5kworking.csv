@@ -1,4 +1,3 @@
-Created,Method,UriStem,UriQuery,IP,UserAgent,URL
 2021-01-02 01:31:30,GET,/account/logon,targetUrl=%2fAccount%2fGetJWTToken,172.17.100.110,Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36,http://admin-uk.synergytrak.com/facility
 2021-01-02 01:31:32,POST,/Account/GetJWTToken,-,172.17.100.110,Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36,https://admin-uk.synergytrak.com/Items?identifier=1251870&selection=instance
 2021-01-02 01:31:32,GET,/account/logon,targetUrl=%2fAccount%2fGetJWTToken,172.17.100.110,Mozilla/5.0+(Windows+NT+6.1)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/87.0.4280.88+Safari/537.36,https://admin-uk.synergytrak.com/Items?identifier=1251870&selection=instance
