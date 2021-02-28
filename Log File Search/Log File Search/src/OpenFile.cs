@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Log_File_Search
 {
@@ -28,18 +29,29 @@ namespace Log_File_Search
                 {
                     // new instance of a datatable -- to do
                     CreateCSV(Name);
+                    Console.WriteLine($"Lines are being appended to {CsvName}.csv.");
                     string line;
                     var count = 0;
                     // Read and display lines from the file until the end of
                     // the file is reached.
                     while ((line = sr.ReadLine()) != null)
                     {
+
                         // Splits the document into words
                         var linesp = line.Split(' ');
-                        // passes words from line into method, per line
-                        IntoCSV(linesp);
-                        count += 1;
-
+                        // Checks to see if the first character is a number (only releavant lines start with a date)
+                        char stringFirstChar = linesp[0].ToCharArray().ElementAt(0);
+                        Boolean result = char.IsNumber(stringFirstChar);
+                        if (result == true)
+                        {
+                            // passes words from line into method, per line
+                            IntoCSV(linesp);
+                            count += 1;
+                        }
+                        else
+                        {
+                            continue;
+                        }
                     }
                     Console.WriteLine($"{count} lines have been added to csv {CsvName}.csv.");
                 }
