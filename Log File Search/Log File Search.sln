@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Log File Search", "Log File Search\Log File Search.csproj", "{19863D3C-9869-48C5-A50B-CC228F28E0BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Log File Search", "Log File Search\Log File Search.csproj", "{19863D3C-9869-48C5-A50B-CC228F28E0BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogFileSearchTesting", "LogFileSearchTesting\LogFileSearchTesting.csproj", "{BD14F957-2066-4289-8A27-FFE95E3EB4C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{19863D3C-9869-48C5-A50B-CC228F28E0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19863D3C-9869-48C5-A50B-CC228F28E0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19863D3C-9869-48C5-A50B-CC228F28E0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD14F957-2066-4289-8A27-FFE95E3EB4C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD14F957-2066-4289-8A27-FFE95E3EB4C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD14F957-2066-4289-8A27-FFE95E3EB4C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD14F957-2066-4289-8A27-FFE95E3EB4C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
