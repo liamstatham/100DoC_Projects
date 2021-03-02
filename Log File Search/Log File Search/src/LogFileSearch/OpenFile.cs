@@ -17,8 +17,18 @@ namespace Log_File_Search
             var result = File.Exists(FileH);
             if(result == true)
             {
-                Name = name;
-                return Name;
+                var extension = Path.GetExtension(FileH);
+                if(extension == ".txt")
+                {
+                    Name = name;
+                    return Name;
+                }
+                else
+                {
+                    Console.WriteLine($"File: {name} is not a .txt file.");
+                    Name = "Wrong file type";
+                    return Name;
+                }
             }
             else
             {
@@ -75,7 +85,7 @@ namespace Log_File_Search
             
             return Lines;
         }
-        public void CreateCSV(string Name)
+        public string CreateCSV(string Name)
         {
             // need to create a data table
             // splitting on the . removes the dot, so use the sub 0 [0]
@@ -92,6 +102,7 @@ namespace Log_File_Search
                     using (var writer = File.OpenWrite($"{CsvName}.csv"))
                     {
                         Console.WriteLine($"File {CsvName}.csv has been created.");
+                        return "Created";
                     }
                     // need to write file headings
                     using (FileStream fs = new FileStream(DataFile, FileMode.Append, FileAccess.Write))
@@ -100,13 +111,15 @@ namespace Log_File_Search
                         {
                             var headings = "Created" + "," + "Method" + "," + "UriStem" + "," + "UriQuery" + "," + "IP" + "," + "UserAgent" + "," + "URL";
                             sw.WriteLine(headings);
+                            //return headings;
                         }
                     }
-
+                    
                 }
                 else
                 {
                     Console.WriteLine($"File {CsvName}.csv already exits.");
+                    return "Exists";
                 }
 
             }
@@ -115,6 +128,7 @@ namespace Log_File_Search
                 // Let the user know what went wrong.
                 Console.WriteLine($"The file name was missing a . {Name}");
                 Console.WriteLine(e.Message);
+                return Name;
             }
         }
 
