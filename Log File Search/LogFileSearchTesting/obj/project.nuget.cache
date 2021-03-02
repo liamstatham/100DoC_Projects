@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3MRe7PyqKDNo6d5DOjvhaXT5kldfYGS3H8SNs033q32qy85UvEtZLWADJL/6W0B+B/PpePRYa1icA9vV2uQPUw==",
+  "dgSpecHash": "zC5XYTmPSWCMd9mQ6R8WozcQtRBu81XtSEpr8hKUEknxtILJBDZUUBFugtW5ieqqYbPZBZi/u/XIaqi9IG07LA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj",
+  "projectFilePath": "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Liam_Statham\\.nuget\\packages\\apache.arrow\\0.14.1\\apache.arrow.0.14.1.nupkg.sha512",
     "C:\\Users\\Liam_Statham\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",

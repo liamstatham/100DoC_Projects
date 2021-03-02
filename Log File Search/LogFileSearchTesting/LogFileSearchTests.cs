@@ -72,6 +72,7 @@ namespace LogFileSearchTesting
             File.Delete(filename);
             //Deletes file in
             //C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\LogFileSearchTesting\bin\Debug\netcoreapp3.1
+            //test
         }
     }
 }
