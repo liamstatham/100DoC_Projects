@@ -50,6 +50,7 @@ namespace Log_File_Search
                     // new instance of a datatable -- to do
                     CreateCSV(Name);
                     Console.WriteLine($"Lines are being appended to {CsvName}.csv.");
+                    CSVHeadings(CsvName);
                     string line;
                     var count = 0;
                     // Read and display lines from the file until the end of
@@ -104,17 +105,6 @@ namespace Log_File_Search
                         Console.WriteLine($"File {CsvName}.csv has been created.");
                         return "Created";
                     }
-                    // need to write file headings
-                    using (FileStream fs = new FileStream(DataFile, FileMode.Append, FileAccess.Write))
-                    {
-                        using (StreamWriter sw = new StreamWriter(fs))
-                        {
-                            var headings = "Created" + "," + "Method" + "," + "UriStem" + "," + "UriQuery" + "," + "IP" + "," + "UserAgent" + "," + "URL";
-                            sw.WriteLine(headings);
-                            //return headings;
-                        }
-                    }
-                    
                 }
                 else
                 {
@@ -130,6 +120,33 @@ namespace Log_File_Search
                 Console.WriteLine(e.Message);
                 return Name;
             }
+        }
+
+        public string CSVHeadings(string csvName)
+        {
+            try
+            {
+                var DataFile = csvName + ".csv";
+                // need to write file headings
+                using (FileStream fs = new FileStream(DataFile, FileMode.Append, FileAccess.Write))
+                {
+                    using (StreamWriter sw = new StreamWriter(fs))
+                    {
+                        var headings = "Created" + "," + "Method" + "," + "UriStem" + "," + "UriQuery" + "," + "IP" + "," + "UserAgent" + "," + "URL";
+                        sw.WriteLine(headings);
+                        return "Headings";
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                // Let the user know what went wrong.
+                Console.WriteLine($"The headings could not be writted to {CsvName}.csv");
+                Console.WriteLine(e.Message);
+                return "Failed";
+            }
+
+
         }
 
         public void IntoCSV(string[] linesp)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jE4P5wbjOZxbBrx7JMKHd+rHFV4t/roGLYWc4GugbLEL+CBcuH1SPoH6O54qjQIICqnb3v0RQLtLELPsAd0LVA==",
+  "dgSpecHash": "YASJZtZobwKE7K/e/6RowRgNo8HxdprWD9+LwHcxPD5OvKB5gYcXqH/op+ujCc+zxi33pL/6xfhxGTVM800BNQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
+  "projectFilePath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Liam_Statham\\.nuget\\packages\\apache.arrow\\0.14.1\\apache.arrow.0.14.1.nupkg.sha512",
     "C:\\Users\\Liam_Statham\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",

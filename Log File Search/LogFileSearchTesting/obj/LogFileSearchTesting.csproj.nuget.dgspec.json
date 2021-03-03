@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj": {}
+    "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj": {
+    "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
+        "projectUniqueName": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
         "projectName": "Log File Search",
-        "projectPath": "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
+        "projectPath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
         "packagesPath": "C:\\Users\\Liam_Statham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\Log File Search\\obj\\",
+        "outputPath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj": {
+    "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj",
+        "projectUniqueName": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj",
         "projectName": "LogFileSearchTesting",
-        "projectPath": "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj",
+        "projectPath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\LogFileSearchTesting.csproj",
         "packagesPath": "C:\\Users\\Liam_Statham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\obj\\",
+        "outputPath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\LogFileSearchTesting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -110,8 +110,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj": {
-                "projectPath": "C:\\Users\\Liam_Statham\\Source\\Repos\\liamstatham\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj"
+              "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj": {
+                "projectPath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj"
               }
             }
           }

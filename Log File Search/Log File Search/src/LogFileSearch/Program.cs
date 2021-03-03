@@ -10,8 +10,29 @@ namespace Log_File_Search
             var fname = Console.ReadLine();
             var file = new OpenFile();
 
-            file.fhand(fname);
-            file.AddToCsv();
+            var name = file.fhand(fname);
+            if (name != fname)
+            {
+                Environment.Exit(0);
+            }
+            else
+            {
+                Console.WriteLine($"Would you like to add {fname} to a CSV file? Y or N");
+                var input = Console.ReadLine();
+                if (input.ToUpper() == "Y")
+                {
+                    file.AddToCsv();
+                }
+                else if (input.ToUpper() == "N")
+                {
+                    Console.WriteLine("Program ending.");
+                }
+                else
+                {
+                    Console.WriteLine($"{input} was invalid.");
+                }
+            }
+            
         }
     }
 }

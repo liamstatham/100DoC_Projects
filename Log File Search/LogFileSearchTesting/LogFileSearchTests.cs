@@ -63,6 +63,17 @@ namespace LogFileSearchTesting
             //C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\LogFileSearchTesting\bin\Debug\netcoreapp3.1
         }
 
+        [Fact]
+        public void CheckHeadingsAreAddedToCSV()
+        {
+            var filecsv = "5k.csv";
+            var log = new OpenFile();  
+            var result = log.CSVHeadings(filecsv);
+
+            Assert.Equal("Headings", result);
+            DeleteCreatedCSV(filecsv);
+        }
+
         public void DeleteCreatedCSV(string file)
         {
             // should add a try catch here.
