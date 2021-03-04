@@ -6,9 +6,9 @@ using System.Data.SQLite;
 
 namespace Log_File_Search
 {
-    class SQLiteDB
+    public class SQLiteDB
     {
-        static SQLiteConnection CreateConnection()
+        public void SQLiteConnection CreateConnection()
         {
 
             SQLiteConnection sqlite_conn;
@@ -25,7 +25,7 @@ namespace Log_File_Search
             }
             return sqlite_conn;
         }
-        static void CreateTable(SQLiteConnection conn)
+        public static void CreateTable(SQLiteConnection conn)
         {
 
             SQLiteCommand sqlite_cmd;
@@ -46,7 +46,7 @@ namespace Log_File_Search
         }
 
         // to add to table, will need to parameterise the variables, find a way to get the linesp data to this method. 
-        static void InsertData(SQLiteConnection conn)
+        public static void InsertData(SQLiteConnection conn)
         {
             SQLiteCommand sqlite_cmd;
             sqlite_cmd = conn.CreateCommand();

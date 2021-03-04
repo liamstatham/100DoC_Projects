@@ -25,11 +25,28 @@ namespace Log_File_Search
                 }
                 else if (input.ToUpper() == "N")
                 {
-                    Console.WriteLine("Program ending.");
+                    // add functionality for adding to database
+                    Console.WriteLine($"Would you like to add {fname} to a datatable? Y or N");
+                    var inputN = Console.ReadLine();
+                    if (inputN.ToUpper() == "Y")
+                    {
+                        Console.WriteLine("Adding to datatable...");
+                        
+                    }
+                    else if (input.ToUpper() == "N")
+                    {
+                        Console.WriteLine("Program ending.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{input} was invalid.");
+                        Environment.Exit(0);
+                    }
                 }
                 else
                 {
                     Console.WriteLine($"{input} was invalid.");
+                    Environment.Exit(0);
                 }
             }
             

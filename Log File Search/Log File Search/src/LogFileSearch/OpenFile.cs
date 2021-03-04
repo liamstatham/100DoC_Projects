@@ -145,8 +145,6 @@ namespace Log_File_Search
                 Console.WriteLine(e.Message);
                 return "Failed";
             }
-
-
         }
 
         public void IntoCSV(string[] linesp)
@@ -173,6 +171,70 @@ namespace Log_File_Search
             }
         }
 
+        public void CreateDataTable()
+        {
+            try
+            {
+                var logFileDT = MemoryData.CreateTable();
+                Console.WriteLine($"Data table {logFileDT} has been created.");
+                
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
+        public void AddToDataTable()
+        {
+            //Name = name;
+            Console.WriteLine($"Your file name is {FileH}");
+            try
+            {
+                // Create an instance of StreamReader to read from a file.
+                // The using statement also closes the StreamReader.
+                using (StreamReader sr = new StreamReader(FileH))
+                {
+                    // new instance of a datatable -- to do
+                    CreateDataTable();
+                    
+                    //Console.WriteLine($"Lines are being appended to {CsvName}.csv.");
+                    //CSVHeadings(CsvName);
+                    string line;
+                    var count = 0;
+                    // Read and display lines from the file until the end of
+                    // the file is reached.
+                    while ((line = sr.ReadLine()) != null)
+                    {
+
+                        // Splits the document into words
+                        var linesp = line.Split(' ');
+                        // Checks to see if the first character is a number (only releavant lines start with a date)
+                        char stringFirstChar = linesp[0].ToCharArray().ElementAt(0);
+                        Boolean result = char.IsNumber(stringFirstChar);
+                        if (result == true)
+                        {
+                            // passes words from line into method, per line
+
+                            // need to 
+                            MemoryData.InsertLogs(logTable, linesp);
+                            count += 1;
+                        }
+                        else
+                        {
+                            continue;
+                        }
+                    }
+                    Console.WriteLine($"{count} lines have been added to csv {CsvName}.csv.");
+                }
+            }
+            catch (Exception e)
+            {
+                // Let the user know what went wrong.
+                Console.WriteLine("The file could not be read:");
+                Console.WriteLine(e.Message);
+            }
+        }
 
         // public List<string> List;
         //public string[] Words;
