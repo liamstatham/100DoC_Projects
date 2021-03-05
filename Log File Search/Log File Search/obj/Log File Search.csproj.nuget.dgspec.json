@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[0.4.0, )"
             },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.1, )"
+            },
             "System.Data.SQLite": {
               "target": "Package",
               "version": "[1.0.113.7, )"

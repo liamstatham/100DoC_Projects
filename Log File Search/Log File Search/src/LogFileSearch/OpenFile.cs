@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 
@@ -132,7 +133,7 @@ namespace Log_File_Search
                 {
                     using (StreamWriter sw = new StreamWriter(fs))
                     {
-                        var headings = "Created" + "," + "Method" + "," + "UriStem" + "," + "UriQuery" + "," + "IP" + "," + "UserAgent" + "," + "URL";
+                        var headings = "Created" + "," + "Method" + "," + "UriStem" + "," + "UriQuery" + "," + "IP" + "," + "User" + "," + "URL";
                         sw.WriteLine(headings);
                         return "Headings";
                     }
@@ -157,10 +158,10 @@ namespace Log_File_Search
             var uriStem = linesp[4];
             var uriQuery = linesp[5];
             var ip = linesp[8];
-            var userAgent = linesp[9];
+            var user = linesp[7];
             var url = linesp[10];
 
-            var lineToWrite = bigdate + "," + method + "," + uriStem + "," + uriQuery + "," + ip + "," + userAgent + "," + url;
+            var lineToWrite = bigdate + "," + method + "," + uriStem + "," + uriQuery + "," + ip + "," + user + "," + url;
 
             using (FileStream fs = new FileStream(DataFile, FileMode.Append, FileAccess.Write))
             {
@@ -175,8 +176,11 @@ namespace Log_File_Search
         {
             try
             {
-                var logFileDT = MemoryData.CreateTable();
+                var logFileDT = new MemoryData();
+                logFileDT.CreateTable();
                 Console.WriteLine($"Data table {logFileDT} has been created.");
+                //LogFileDT = logFileDT;
+                //return logFileDT;
                 
             }
             catch (Exception e)
@@ -185,6 +189,7 @@ namespace Log_File_Search
             }
         }
 
+        // breaking after data table created. need to step through.
         public void AddToDataTable()
         {
             //Name = name;
@@ -215,9 +220,9 @@ namespace Log_File_Search
                         if (result == true)
                         {
                             // passes words from line into method, per line
-
+                            //DataTable table = LogFileDT;
                             // need to 
-                            MemoryData.InsertLogs(logTable, linesp);
+                            MemoryData.InsertLogs(LogFileDT, linesp);
                             count += 1;
                         }
                         else
@@ -226,6 +231,7 @@ namespace Log_File_Search
                         }
                     }
                     Console.WriteLine($"{count} lines have been added to csv {CsvName}.csv.");
+                    MemoryData.ShowTable(LogFileDT);
                 }
             }
             catch (Exception e)
@@ -236,8 +242,15 @@ namespace Log_File_Search
             }
         }
 
+        public void ShowDataTable(DataTable logTable)
+        {
+            MemoryData.ShowTable(logTable);
+        }
+
         // public List<string> List;
         //public string[] Words;
+        //public DataTable LogFileDT;
+        public DataTable LogFileDT;
         public string[] Lines;
         public string Name;
         public string FileH;

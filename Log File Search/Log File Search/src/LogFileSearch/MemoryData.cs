@@ -10,7 +10,7 @@ namespace Log_File_Search
         //https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-5.0
         // data table info
         
-        public static DataTable CreateTable()
+        public DataTable CreateTable()
         {
             //define table
             DataTable logTable = new DataTable("Log_Table");
@@ -31,7 +31,7 @@ namespace Log_File_Search
                                   new DataColumn("UriStem",typeof(String)),
                                   new DataColumn("UriQuery",typeof(String)),
                                   new DataColumn("IP",typeof(String)),
-                                  new DataColumn("UserAgent",typeof(String)),
+                                  new DataColumn("User",typeof(String)),
                                   new DataColumn("URL",typeof(String))
                                 };
             logTable.Columns.AddRange(cols);
@@ -39,7 +39,7 @@ namespace Log_File_Search
             return logTable;
 
         }
-        public static void InsertLogs(DataTable logTable ,string linesp)
+        public static void InsertLogs(DataTable logTable ,string[] linesp)
         {
             
             // split linesp
@@ -48,16 +48,17 @@ namespace Log_File_Search
             var uriStem = linesp[4];
             var uriQuery = linesp[5];
             var ip = linesp[8];
-            var userAgent = linesp[9];
+            var user = linesp[7];
             var url = linesp[10];
 
+            // this breaks, throws null reference exception logTable was null
             DataRow row = logTable.NewRow();
             row["CreatedDate"] = bigdate;
             row["Method"] = method;
             row["UriStem"] = uriStem;
             row["UriQuery"] = uriQuery;
             row["IP"] = ip;
-            row["UserAgent"] = userAgent;
+            row["User"] = user;
             row["URL"] = url;
 
             try
@@ -68,6 +69,30 @@ namespace Log_File_Search
             {
                 Console.WriteLine(e);
             }
+        }
+
+        public static void ShowTable(DataTable logTable)
+        {
+            foreach (DataColumn col in logTable.Columns)
+            {
+                Console.Write("{0,-14}", col.ColumnName);
+            }
+            Console.WriteLine();
+
+            foreach (DataRow row in logTable.Rows)
+            {
+                foreach (DataColumn col in logTable.Columns)
+                {
+                    if (col.DataType.Equals(typeof(DateTime)))
+                        Console.Write("{0,-14:d}", row[col]);
+                    else if (col.DataType.Equals(typeof(Decimal)))
+                        Console.Write("{0,-14:C}", row[col]);
+                    else
+                        Console.Write("{0,-14}", row[col]);
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
         }
         public DataTable LogTable;
     }

@@ -130,3 +130,4 @@ C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\LogFileSearchTestin
 C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\LogFileSearchTesting\obj\Debug\netcoreapp3.1\LogFileSearchTesting.dll
 C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\LogFileSearchTesting\obj\Debug\netcoreapp3.1\LogFileSearchTesting.pdb
 C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\LogFileSearchTesting\obj\Debug\netcoreapp3.1\LogFileSearchTesting.genruntimeconfig.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\LogFileSearchTesting\bin\Debug\netcoreapp3.1\testhost.exe
