@@ -176,8 +176,8 @@ namespace Log_File_Search
         {
             try
             {
-                var logFileDT = new MemoryData();
-                logFileDT.CreateTable();
+                var logFileDT = CreateTable();
+                //logFileDT.CreateTable();
                 Console.WriteLine($"Data table {logFileDT} has been created.");
                 //LogFileDT = logFileDT;
                 //return logFileDT;
@@ -222,7 +222,7 @@ namespace Log_File_Search
                             // passes words from line into method, per line
                             //DataTable table = LogFileDT;
                             // need to 
-                            MemoryData.InsertLogs(LogFileDT, linesp);
+                            InsertLogs(LogFileDT, linesp);
                             count += 1;
                         }
                         else
@@ -230,8 +230,8 @@ namespace Log_File_Search
                             continue;
                         }
                     }
-                    Console.WriteLine($"{count} lines have been added to csv {CsvName}.csv.");
-                    MemoryData.ShowTable(LogFileDT);
+                    Console.WriteLine($"{count} lines have been added to DataTable: {LogFileDT}");
+                    //ShowTable(LogFileDT);
                 }
             }
             catch (Exception e)
@@ -242,9 +242,72 @@ namespace Log_File_Search
             }
         }
 
-        public void ShowDataTable(DataTable logTable)
+        //public void ShowDataTable(DataTable logTable)
+        //{
+        //    MemoryData.ShowTable(logTable);
+        //}
+
+        public DataTable CreateTable()
         {
-            MemoryData.ShowTable(logTable);
+            //define table
+            DataTable logTable = new DataTable("Log_Table");
+
+            // create autoincrement column & add to table
+            DataColumn LogId = new DataColumn();
+            LogId.DataType = System.Type.GetType("System.Int32");
+            LogId.AutoIncrement = true;
+            LogId.AutoIncrementSeed = 1;
+            LogId.AutoIncrementStep = 1;
+            logTable.Columns.Add(LogId);
+
+            //define Other columns
+            DataColumn[] cols =
+                                {
+                                  new DataColumn("CreatedDate",typeof(DateTime)),
+                                  new DataColumn("Method",typeof(String)),
+                                  new DataColumn("UriStem",typeof(String)),
+                                  new DataColumn("UriQuery",typeof(String)),
+                                  new DataColumn("IP",typeof(String)),
+                                  new DataColumn("User",typeof(String)),
+                                  new DataColumn("URL",typeof(String))
+                                };
+            logTable.Columns.AddRange(cols);
+            logTable.PrimaryKey = new DataColumn[] { logTable.Columns["LogId"] };
+            LogFileDT = logTable;
+            return LogFileDT;
+
+        }
+
+
+        public static void InsertLogs(DataTable logTable, string[] linesp)
+        {
+            // split linesp
+            var bigdate = linesp[0] + ' ' + linesp[1];
+            var method = linesp[3];
+            var uriStem = linesp[4];
+            var uriQuery = linesp[5];
+            var ip = linesp[8];
+            var user = linesp[7];
+            var url = linesp[10];
+
+            // this breaks, throws null reference exception logTable was null
+            DataRow row = logTable.NewRow();
+            row["CreatedDate"] = bigdate;
+            row["Method"] = method;
+            row["UriStem"] = uriStem;
+            row["UriQuery"] = uriQuery;
+            row["IP"] = ip;
+            row["User"] = user;
+            row["URL"] = url;
+
+            try
+            {
+                logTable.Rows.Add(row);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
         }
 
         // public List<string> List;

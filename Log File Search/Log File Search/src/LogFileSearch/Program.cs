@@ -32,6 +32,7 @@ namespace Log_File_Search
                     {
                         Console.WriteLine("Adding to datatable...");
                         file.AddToDataTable();
+                        Console.ReadLine();
                         
                     }
                     else if (input.ToUpper() == "N")
