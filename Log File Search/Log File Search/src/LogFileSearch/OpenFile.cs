@@ -176,7 +176,7 @@ namespace Log_File_Search
         {
             try
             {
-                var logFileDT = CreateTable();
+                var logFileDT = CreateTable("Log_Table");
                 //logFileDT.CreateTable();
                 Console.WriteLine($"Data table {logFileDT} has been created.");
                 //LogFileDT = logFileDT;
@@ -247,10 +247,11 @@ namespace Log_File_Search
         //    MemoryData.ShowTable(logTable);
         //}
 
-        public DataTable CreateTable()
+        public DataTable CreateTable(string name)
         {
+            
             //define table
-            DataTable logTable = new DataTable("Log_Table");
+            DataTable logTable = new DataTable(name);
 
             // create autoincrement column & add to table
             DataColumn LogId = new DataColumn();
@@ -308,6 +309,31 @@ namespace Log_File_Search
             {
                 Console.WriteLine(e);
             }
+        }
+
+        public void SearchTerm(string column, string term)
+        {
+
+            var trimterm = term.Trim();
+
+            // method to search data table and then add results to new data table
+            if(column == "1")
+            {
+                column = "User";
+                SearchDataTable(LogFileDT, column, trimterm);
+                Console.WriteLine(column);
+            }
+            else if(column == "2")
+            {
+                column = "URL";
+                SearchDataTable(LogFileDT, column, trimterm);
+                Console.WriteLine(column);
+            }
+        }
+
+        public static void SearchDataTable(DataTable logTable, string column, string term)
+        {
+            Console.ReadLine();
         }
 
         // public List<string> List;
