@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "J3miq2zJv8kLPQ3DDt+ngOsRt84sWeLYrPOdGqjJ31Q/vMf++DI9dNB+QAj9kgAEgMcsoq9/9ucP/qx3ORDocQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\OdeToFood\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
