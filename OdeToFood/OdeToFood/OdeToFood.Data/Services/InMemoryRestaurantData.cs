@@ -5,11 +5,11 @@ using System.Linq;
 
 namespace OdeToFood.Data.Services
 {
-    public class InMemoryRestaurntData : IRestaurantData
+    public class InMemoryRestaurantData : IRestaurantData
     {
         List<Restaurant> restaurants;
 
-        public InMemoryRestaurntData()
+        public InMemoryRestaurantData()
         {
             restaurants = new List<Restaurant>()
             {
