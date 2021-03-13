@@ -99,3 +99,9 @@ C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\b
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Numerics.Vectors.xml
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Net.Http.Formatting.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Web.Http.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Web.Http.WebHost.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Net.Http.Formatting.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Web.Http.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Web.Http.WebHost.xml
