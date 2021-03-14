@@ -1,15 +1,13 @@
-﻿using OdeToFood.Data.Models;
-using OdeToFood.Data.Services;
+﻿using OdeToFood.Data.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+using System.Web;
+using System.Web.Mvc;
 
-namespace OdeToFood.Web.API
+namespace OdeToFood.Web.Controllers
 {
-    public class RestaurantsController : ApiController
+    public class RestaurantsController : Controller
     {
         private readonly IRestaurantData db;
 
@@ -17,10 +15,11 @@ namespace OdeToFood.Web.API
         {
             this.db = db;
         }
-        public IEnumerable<Restaurant> get()
+        // GET: Restaurants
+        public ActionResult Index()
         {
             var model = db.GetAll();
-            return model;
+            return View(model);
         }
     }
 }

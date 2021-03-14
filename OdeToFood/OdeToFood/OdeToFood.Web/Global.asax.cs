@@ -18,7 +18,7 @@ namespace OdeToFood.Web
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            ContainerConfig.RegisterBundles();
+            ContainerConfig.RegisterBundles(GlobalConfiguration.Configuration);
 
         }
     }

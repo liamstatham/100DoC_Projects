@@ -105,3 +105,6 @@ C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\b
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Net.Http.Formatting.xml
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Web.Http.xml
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.xml
