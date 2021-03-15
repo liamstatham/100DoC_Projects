@@ -18,6 +18,12 @@ namespace OdeToFood.Data.Services
                 new Restaurant {Id = 3, Name = "Mango Grove", Cuisine = CuisineType.Indian}
             };
         }
+
+        public Restaurant Get(int id)
+        {
+            return restaurants.FirstOrDefault(r => r.Id == id);
+        }
+
         public IEnumerable<Restaurant> GetAll()
         {
             // using system.linq r=> r.Name makes the list asceding

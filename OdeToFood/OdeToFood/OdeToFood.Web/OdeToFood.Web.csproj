@@ -210,6 +210,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Greeting\Index.cshtml" />
     <Content Include="Views\Restaurants\Index.cshtml" />
+    <Content Include="Views\Restaurants\Details.cshtml" />
+    <Content Include="Views\Restaurants\NotFound.cshtml" />
+    <Content Include="Views\Restaurants\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -232,6 +235,9 @@
       <Project>{9cf3dfcb-8bda-4e97-892b-871430571e6b}</Project>
       <Name>OdeToFood.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -21,5 +21,21 @@ namespace OdeToFood.Web.Controllers
             var model = db.GetAll();
             return View(model);
         }
+
+        public ActionResult Details(int id)
+        {
+            var model = db.Get(id);
+            if (model == null)
+            {
+                return View("NotFound");
+            }
+            return View(model);
+        }
+
+        public ActionResult Create()
+        {
+            //Responds to a GET request to return a FORM to create a restaurant - not actually creating one
+            return View();
+        }
     }
 }
