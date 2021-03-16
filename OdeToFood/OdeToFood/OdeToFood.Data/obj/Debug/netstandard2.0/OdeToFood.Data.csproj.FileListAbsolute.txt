@@ -7,3 +7,10 @@ C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\obj\Debug\netstandard2.0\OdeToFood.Data.csproj.CoreCompileInputs.cache
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\obj\Debug\netstandard2.0\OdeToFood.Data.dll
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\obj\Debug\netstandard2.0\OdeToFood.Data.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\bin\Debug\netstandard2.0\System.Configuration.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\bin\Debug\netstandard2.0\System.Security.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\bin\Debug\netstandard2.0\System.Configuration.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\bin\Debug\netstandard2.0\System.Security.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Data\obj\Debug\netstandard2.0\OdeToFood.Data.csproj.CopyComplete
