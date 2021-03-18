@@ -108,3 +108,7 @@ C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\b
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.dll
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.pdb
 C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\Autofac.Integration.WebApi.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\EntityFramework.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\EntityFramework.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\OdeToFood\OdeToFood\OdeToFood.Web\bin\EntityFramework.SqlServer.xml

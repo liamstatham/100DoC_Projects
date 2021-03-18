@@ -1,11 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "J3miq2zJv8kLPQ3DDt+ngOsRt84sWeLYrPOdGqjJ31Q/vMf++DI9dNB+QAj9kgAEgMcsoq9/9ucP/qx3ORDocQ==",
+  "dgSpecHash": "FRw3GOAobLHpXzgXlP/67bbJKuzBsg3giPsf6DU9tVCsXHypYF4RDkcQ0w89TmFfmcDHSCg2OayTOZ4VJN9YUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\OdeToFood\\OdeToFood\\OdeToFood.Data\\OdeToFood.Data.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EntityFramework 6.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EntityFramework",
+      "targetGraphs": [
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }
