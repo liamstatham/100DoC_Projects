@@ -29,5 +29,11 @@ namespace Jims_Cars.Data.Services
         {
             return carslist.OrderBy(c => c.Name);
         }
+
+        public void Add(Cars car)
+        {
+            carslist.Add(car);
+            car.Id = carslist.Max(r => r.Id + 1);
+        }
     }
 }

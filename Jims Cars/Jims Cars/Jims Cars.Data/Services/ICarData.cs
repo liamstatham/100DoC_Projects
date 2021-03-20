@@ -10,5 +10,7 @@ namespace Jims_Cars.Data.Services
         IEnumerable<Cars> GetCars();
         Cars Get(int id);
 
+        void Add(Cars car);
+
     }
 }
