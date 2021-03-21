@@ -1,5 +1,6 @@
 ﻿using Jims_Cars.Data.Models;
 using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Jims_Cars.Data.Models
 {
@@ -12,6 +13,7 @@ namespace Jims_Cars.Data.Models
         public string Brand { get; set; }
 
         // Car name
+        [Required]
         public string Name { get; set; }
 
         // Car colour

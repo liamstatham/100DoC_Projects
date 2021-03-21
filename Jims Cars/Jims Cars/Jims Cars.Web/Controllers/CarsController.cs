@@ -48,5 +48,26 @@ namespace Jims_Cars.Web.Controllers
             var model = db.GetCars();
             return View(model);
         }
+
+        [HttpGet]
+        public ActionResult Edit(int id)
+        {
+            var model = db.Get(id);
+            if(model == null)
+            {
+                return HttpNotFound();
+            }
+            return View(model);
+        }
+        [HttpPost]
+        public ActionResult Edit(Cars car)
+        {
+            if(ModelState.IsValid)
+            {
+                db.Update(car);
+                return RedirectToAction("Details", new { id = car.Id });
+            }
+            return View(car);
+        }
     }
 }

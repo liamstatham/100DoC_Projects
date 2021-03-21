@@ -12,5 +12,7 @@ namespace Jims_Cars.Data.Services
 
         void Add(Cars car);
 
+        void Update(Cars car);
+
     }
 }

@@ -22,7 +22,7 @@ namespace Jims_Cars.Web.App_Start
             // builder to know about the type and then use the type when ICarData is implemented
             builder.RegisterType<InMemoryCarData>()
                    .As<ICarData>()
-                   .InstancePerRequest();
+                   .SingleInstance();
             
 
             //build container

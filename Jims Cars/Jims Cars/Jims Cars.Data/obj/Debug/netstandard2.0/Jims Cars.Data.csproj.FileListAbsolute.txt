@@ -7,3 +7,10 @@ C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\
 C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\obj\Debug\netstandard2.0\Jims Cars.Data.csproj.CoreCompileInputs.cache
 C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\obj\Debug\netstandard2.0\Jims Cars.Data.dll
 C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\obj\Debug\netstandard2.0\Jims Cars.Data.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\bin\Debug\netstandard2.0\System.Configuration.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\bin\Debug\netstandard2.0\System.Security.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\bin\Debug\netstandard2.0\System.ComponentModel.DataAnnotations.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\bin\Debug\netstandard2.0\System.Configuration.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\bin\Debug\netstandard2.0\System.Security.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Data\obj\Debug\netstandard2.0\Jims Cars.Data.csproj.CopyComplete
