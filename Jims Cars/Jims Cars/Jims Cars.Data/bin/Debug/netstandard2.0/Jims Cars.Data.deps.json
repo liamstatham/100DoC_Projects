@@ -12,6 +12,7 @@
           "Autofac": "6.1.0",
           "Autofac.Mvc5": "6.0.0",
           "Autofac.WebApi2": "6.0.1",
+          "EntityFramework": "6.2.0",
           "NETStandard.Library": "2.0.3",
           "System.ComponentModel.DataAnnotations": "4.0.0.0"
         },
@@ -44,6 +45,18 @@
           "lib/net472/Autofac.Integration.WebApi.dll": {
             "assemblyVersion": "6.0.1.0",
             "fileVersion": "6.0.1.0"
+          }
+        }
+      },
+      "EntityFramework/6.2.0": {
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.2.61023.0"
           }
         }
       },
@@ -175,6 +188,13 @@
       "sha512": "sha512-mWUMdYT4JwKMTfo7tEAHQQNfYdBa1wHrQWJplMtCn6IakPlVXOMbTYIcCApYJBoNG9ARUJRSAEvs6tWYtEuXTA==",
       "path": "autofac.webapi2/6.0.1",
       "hashPath": "autofac.webapi2.6.0.1.nupkg.sha512"
+    },
+    "EntityFramework/6.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ptGyXOf26qLrtn+2doAmylIlCxOnBJANwlyyLrXDmqIk9O18IzLWHyxDwwAyhgXkxmbiaA0WNpRy67WRReInBw==",
+      "path": "entityframework/6.2.0",
+      "hashPath": "entityframework.6.2.0.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
       "type": "package",

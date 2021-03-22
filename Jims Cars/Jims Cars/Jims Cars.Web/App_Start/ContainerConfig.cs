@@ -20,9 +20,10 @@ namespace Jims_Cars.Web.App_Start
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
             builder.RegisterApiControllers(typeof(MvcApplication).Assembly);
             // builder to know about the type and then use the type when ICarData is implemented
-            builder.RegisterType<InMemoryCarData>()
+            builder.RegisterType<SqlCarData>()
                    .As<ICarData>()
-                   .SingleInstance();
+                   .InstancePerRequest();
+            builder.RegisterType<CarsDbContext>().InstancePerRequest();
             
 
             //build container

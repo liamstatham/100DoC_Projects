@@ -14,5 +14,7 @@ namespace Jims_Cars.Data.Services
 
         void Update(Cars car);
 
+        void Delete(int id);
+
     }
 }

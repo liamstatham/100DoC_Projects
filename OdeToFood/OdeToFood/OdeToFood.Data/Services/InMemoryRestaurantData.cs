@@ -43,5 +43,14 @@ namespace OdeToFood.Data.Services
             // using system.linq r=> r.Name makes the list asceding
             return restaurants.OrderBy(r => r.Name);
         }
+
+        public void Delete(int id)
+        {
+            var restaurant = Get(id);
+            if(restaurant != null)
+            {
+                restaurants.Remove(restaurant);
+            }
+        }
     }
 }

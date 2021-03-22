@@ -108,3 +108,7 @@ C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Web\b
 C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Web\bin\System.Threading.Tasks.Extensions.xml
 C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Web\bin\System.Web.Http.xml
 C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Web\bin\EntityFramework.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Web\bin\EntityFramework.xml
+C:\Users\Liam_Statham\github\100DoC_Projects\Jims Cars\Jims Cars\Jims Cars.Web\bin\EntityFramework.SqlServer.xml

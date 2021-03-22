@@ -46,5 +46,14 @@ namespace Jims_Cars.Data.Services
                 existing.Colour = car.Colour;
             }
         }
+
+        public void Delete(int id)
+        {
+            var car = Get(id);
+            if(car != null)
+            {
+                cars.Remove(car);
+            }
+        }
     }
 }
