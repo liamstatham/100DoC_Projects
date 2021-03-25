@@ -1,0 +1,7 @@
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\DaysOfWeek\DaysOfWeek\DaysOfWeek\bin\Debug\DaysOfWeek.exe.config
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\DaysOfWeek\DaysOfWeek\DaysOfWeek\bin\Debug\DaysOfWeek.exe
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\DaysOfWeek\DaysOfWeek\DaysOfWeek\bin\Debug\DaysOfWeek.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\DaysOfWeek\DaysOfWeek\DaysOfWeek\obj\Debug\DaysOfWeek.csprojAssemblyReference.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\DaysOfWeek\DaysOfWeek\DaysOfWeek\obj\Debug\DaysOfWeek.csproj.CoreCompileInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\DaysOfWeek\DaysOfWeek\DaysOfWeek\obj\Debug\DaysOfWeek.exe
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\DaysOfWeek\DaysOfWeek\DaysOfWeek\obj\Debug\DaysOfWeek.pdb

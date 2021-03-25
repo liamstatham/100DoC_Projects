@@ -1,0 +1,7 @@
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\n'th day\n'th day\bin\Debug\n'th day.exe.config
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\n'th day\n'th day\bin\Debug\n'th day.exe
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\n'th day\n'th day\bin\Debug\n'th day.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\n'th day\n'th day\obj\Debug\n'th day.csprojAssemblyReference.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\n'th day\n'th day\obj\Debug\n'th day.csproj.CoreCompileInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\n'th day\n'th day\obj\Debug\n'th day.exe
+C:\Users\Liam_Statham\github\100DoC_Projects\Csharp collections\n'th day\n'th day\obj\Debug\n'th day.pdb
