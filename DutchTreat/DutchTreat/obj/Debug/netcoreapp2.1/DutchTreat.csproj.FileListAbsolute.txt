@@ -1,0 +1,15 @@
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.deps.json
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.runtimeconfig.json
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.runtimeconfig.dev.json
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.csprojAssemblyReference.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.AssemblyInfoInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.AssemblyInfo.cs
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.csproj.CoreCompileInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorAssemblyInfo.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorAssemblyInfo.cs
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorTargetAssemblyInfo.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.genruntimeconfig.cache
