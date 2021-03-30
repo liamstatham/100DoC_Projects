@@ -15,10 +15,10 @@ label {
     font-size: 16px;
 }
 
-#the-form{
+#theForm{
     background-color: #d0d0d0;
 }
-#the-form input[type=submit]{
+#theForm input[type=submit]{
     background-color: green;
     color:white;
 }
@@ -38,7 +38,7 @@ ul.product-props li{
     margin: 2px;
     width: 450px;
     background-color: lightgray;
-    border-radius: 5px;
+    border-radius: 5px; 
 }
 
 .product-info img{
