@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,9 +22,15 @@ namespace DutchTreat
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             //looks for route (localhost:8888) and for default files like index.
-            app.UseDefaultFiles();
+            // don't use this for MVC
+            //app.UseDefaultFiles();
             //actually serves index at the route or /index.html
             app.UseStaticFiles();
+
+            //to enable mvc
+            app.UseRouting();
+
+            app.UseEndpoints();
         }
     }
 }

@@ -14,3 +14,12 @@ C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\net
 C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.pdb
 C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.genruntimeconfig.cache
 C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\libman.json
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.Views.dll
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp2.1\DutchTreat.Views.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.TagHelpers.input.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.TagHelpers.output.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorCoreGenerate.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\Razor\Views\App\Index.cshtml.g.cs
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.RazorTargetAssemblyInfo.cs
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.Views.pdb
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp2.1\DutchTreat.csproj.CopyComplete
