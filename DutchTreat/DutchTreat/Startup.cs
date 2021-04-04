@@ -27,7 +27,7 @@ namespace DutchTreat
             //actually serves index at the route or /index.html
             app.UseStaticFiles();
 
-            //to enable mvc
+            //to enable mvc n 
             app.UseRouting();
 
             app.UseEndpoints();
