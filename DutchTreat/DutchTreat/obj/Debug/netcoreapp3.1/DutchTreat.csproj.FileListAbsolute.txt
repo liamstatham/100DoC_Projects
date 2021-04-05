@@ -1,0 +1,5 @@
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.csprojAssemblyReference.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.AssemblyInfoInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.AssemblyInfo.cs
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.csproj.CoreCompileInputs.cache
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp3.1\DutchTreat.MvcApplicationPartsAssemblyInfo.cache
