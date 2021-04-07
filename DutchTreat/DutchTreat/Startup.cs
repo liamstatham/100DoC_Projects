@@ -16,7 +16,10 @@ namespace DutchTreat
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews()
+                .AddRazorRuntimeCompilation();
+
+            services.AddRazorPages();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -25,6 +28,10 @@ namespace DutchTreat
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/error");
             }
             //looks for route (localhost:8888) and for default files like index.
             // don't use this for MVC
@@ -37,10 +44,12 @@ namespace DutchTreat
 
             //Create route... so app looks for the controller by default and then displays index if no action is supplied.
             app.UseEndpoints(cfg =>
-            cfg.MapControllerRoute("Default",
-            "/{controller}/{action}/{id?}",
-            new { controller = "App", action = "Index" })
-            ); ;
+            {
+                cfg.MapRazorPages();
+                cfg.MapControllerRoute("Default",
+                "/{controller}/{action}/{id?}",
+                new { controller = "App", action = "Index" });
+            }); 
             }
         }
 }
