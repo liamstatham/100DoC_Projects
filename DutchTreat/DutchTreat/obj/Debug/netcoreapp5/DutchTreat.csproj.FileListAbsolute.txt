@@ -354,3 +354,4 @@ C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\net
 C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp5\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\bin\Debug\netcoreapp5\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp5\DutchTreat.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Liam_Statham\github\100DoC_Projects\DutchTreat\DutchTreat\obj\Debug\netcoreapp5\Razor\Pages\_ViewStart.cshtml.g.cs
