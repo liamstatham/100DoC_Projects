@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DutchTreat.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,17 +19,25 @@ namespace DutchTreat.Controllers
         public IActionResult Contact()
         {
             return View();
+
         }
 
         [HttpPost]
-        public IActionResult Contact(object model)
+        public IActionResult Contact(ContactViewModel model)
         {
+            if(ModelState.IsValid)
+            {
+                // send email
+            }
+            else
+            {
+                // return error
+            }
             return View();
         }
 
         public IActionResult About()
         {
-            ViewBag.Title = "About";
             return View();
         }
     }
