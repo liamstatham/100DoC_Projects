@@ -23,23 +23,6 @@ namespace ACM.BL
         //decimal? can be null
         public decimal? CurrentPrice { get; set; }
 
-        //Retrieve one product
-        public Product Retrieve(int productId)
-        {
-            return new Product();
-        }
-
-        //Retrieve all products
-        public List<Product> Retrieve()
-        {
-            return new List<Product>();
-        }
-
-        //Save product
-        public bool Save()
-        {
-            return true;
-        }
 
         //Validate
         public bool Validate()
