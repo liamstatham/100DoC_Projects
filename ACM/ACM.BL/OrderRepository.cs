@@ -11,7 +11,7 @@ namespace ACM.BL
         public Order Retrieve(int orderId)
         {
             Order order = new Order(orderId);
-            if(order.OrderId == 10)
+            if(orderId == 10)
             {
                 order.OrderDate = new DateTimeOffset(DateTime.Now.Year, 4, 14, 10, 00, 00, new TimeSpan(7, 0, 0));
             }
