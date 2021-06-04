@@ -19,6 +19,9 @@ namespace ACM.BL
                 product.ProductDescription = "A very magical wand.";
                 product.CurrentPrice = 30.00M;
             }
+            Object myObject = new Object();
+            Console.WriteLine($"Object: {myObject.ToString()}");
+            Console.WriteLine($"Product: {product.ToString()}");
             return product;
         }
         public bool Save()
