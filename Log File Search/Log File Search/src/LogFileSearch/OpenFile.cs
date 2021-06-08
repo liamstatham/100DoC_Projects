@@ -12,7 +12,7 @@ namespace Log_File_Search
         {
             string dir = Directory.GetCurrentDirectory();
             Console.WriteLine(dir);
-            string dir1 = @"C:\Users\Liam_Statham\github\100DoC_Projects\Log File Search\Log File Search\";
+            string dir1 = @"C:\Users\Liam_Statham\github\Projects\Log File Search\Log File Search\";
             string file = dir1 + name;
             FileH = file;
             var result = File.Exists(FileH);

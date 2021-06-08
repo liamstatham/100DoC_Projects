@@ -7011,11 +7011,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
+      "projectUniqueName": "C:\\Users\\Liam_Statham\\github\\Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
       "projectName": "Log File Search",
-      "projectPath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
+      "projectPath": "C:\\Users\\Liam_Statham\\github\\Projects\\Log File Search\\Log File Search\\Log File Search.csproj",
       "packagesPath": "C:\\Users\\Liam_Statham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\Log File Search\\Log File Search\\obj\\",
+      "outputPath": "C:\\Users\\Liam_Statham\\github\\Projects\\Log File Search\\Log File Search\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7087,7 +7087,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
