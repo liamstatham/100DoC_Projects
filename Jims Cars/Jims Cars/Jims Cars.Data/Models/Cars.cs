@@ -10,7 +10,11 @@ namespace Jims_Cars.Data.Models
         public int Id { get; set; }
 
         // car brand
-        public string Brand { get; set; }
+        public CarMake Brand
+        {
+            get { return Brand; }
+            set { Brand = value; }
+        }
 
         // Car name
         [Required]

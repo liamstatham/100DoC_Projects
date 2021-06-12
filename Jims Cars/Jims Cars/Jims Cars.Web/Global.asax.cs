@@ -1,6 +1,8 @@
-﻿using Jims_Cars.Web.App_Start;
+﻿using Jims_Cars.Data.Services;
+using Jims_Cars.Web.App_Start;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
@@ -19,6 +21,7 @@ namespace Jims_Cars.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             ContainerConfig.RegisterBundles(GlobalConfiguration.Configuration);
+            Database.SetInitializer<CarsDbContext>(null);
         }
     }
 }

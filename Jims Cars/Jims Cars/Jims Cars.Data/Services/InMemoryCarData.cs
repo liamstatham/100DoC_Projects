@@ -14,9 +14,9 @@ namespace Jims_Cars.Data.Services
         {
             cars = new List<Cars>()
             {
-                new Cars {Id = 1, Brand = "HotWheels", Name = "Favourite Cars", Colour = Colour.Silver},
-                new Cars {Id = 2, Brand = "HotWheels", Name = "Jims Cars", Colour = Colour.Blue },
-                new Cars {Id = 3, Brand = "Cars", Name = "Lightning Mcqueen", Colour = Colour.Red}
+                new Cars {Id = 1, Brand = CarMake.HotWheels, Name = "Favourite Cars", Colour = Colour.Silver},
+                new Cars {Id = 2, Brand = CarMake.HotWheels, Name = "Jims Cars", Colour = Colour.Blue },
+                new Cars {Id = 3, Brand = CarMake.Disney, Name = "Lightning Mcqueen", Colour = Colour.Red}
             };
         }
 
