@@ -4,3 +4,6 @@ C:\Users\Liam_Statham\github\Projects\ACM\ACM.BL\obj\Debug\ACM.BL.csprojAssembly
 C:\Users\Liam_Statham\github\Projects\ACM\ACM.BL\obj\Debug\ACM.BL.csproj.CoreCompileInputs.cache
 C:\Users\Liam_Statham\github\Projects\ACM\ACM.BL\obj\Debug\ACM.BL.dll
 C:\Users\Liam_Statham\github\Projects\ACM\ACM.BL\obj\Debug\ACM.BL.pdb
+C:\Users\Liam_Statham\github\Projects\ACM\ACM.BL\bin\Debug\Acme.Common.dll
+C:\Users\Liam_Statham\github\Projects\ACM\ACM.BL\bin\Debug\Acme.Common.pdb
+C:\Users\Liam_Statham\github\Projects\ACM\ACM.BL\obj\Debug\ACM.BL.csproj.CopyComplete

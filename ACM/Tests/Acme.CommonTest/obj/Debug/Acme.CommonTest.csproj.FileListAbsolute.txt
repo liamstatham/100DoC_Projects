@@ -14,3 +14,5 @@ C:\Users\Liam_Statham\github\Projects\ACM\Tests\Acme.CommonTest\obj\Debug\Acme.C
 C:\Users\Liam_Statham\github\Projects\ACM\Tests\Acme.CommonTest\obj\Debug\Acme.CommonTest.csproj.CopyComplete
 C:\Users\Liam_Statham\github\Projects\ACM\Tests\Acme.CommonTest\obj\Debug\Acme.CommonTest.dll
 C:\Users\Liam_Statham\github\Projects\ACM\Tests\Acme.CommonTest\obj\Debug\Acme.CommonTest.pdb
+C:\Users\Liam_Statham\github\Projects\ACM\Tests\Acme.CommonTest\bin\Debug\ACM.BL.dll
+C:\Users\Liam_Statham\github\Projects\ACM\Tests\Acme.CommonTest\bin\Debug\ACM.BL.pdb
