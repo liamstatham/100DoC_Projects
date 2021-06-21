@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj": {}
+    "C:\\Users\\Liam_Statham\\github\\Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj": {
+    "C:\\Users\\Liam_Statham\\github\\Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj",
+        "projectUniqueName": "C:\\Users\\Liam_Statham\\github\\Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj",
         "projectName": "DutchTreat",
-        "projectPath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj",
+        "projectPath": "C:\\Users\\Liam_Statham\\github\\Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj",
         "packagesPath": "C:\\Users\\Liam_Statham\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\DutchTreat\\DutchTreat\\obj\\",
+        "outputPath": "C:\\Users\\Liam_Statham\\github\\Projects\\DutchTreat\\DutchTreat\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

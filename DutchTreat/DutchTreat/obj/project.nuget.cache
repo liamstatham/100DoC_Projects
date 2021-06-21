@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sDHjCY7LOuSqjnYYTPxCspNiSUN0gPB+KBg9d8IOIYMpAR51D4aOw6FRAWsWE7Dqb5M6m+Zb56+o+o5j9N7Lzg==",
+  "dgSpecHash": "mt/0M+zi1TpWQbwtJlOxMFRC7IiUoO3kSVUOIYDU7yskPy/ODvIUUbC/bgCtKjKDVtcv7khB95htupZTPYI4xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Liam_Statham\\github\\100DoC_Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj",
+  "projectFilePath": "C:\\Users\\Liam_Statham\\github\\Projects\\DutchTreat\\DutchTreat\\DutchTreat.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Liam_Statham\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.5\\microsoft.aspnetcore.mvc.razor.extensions.5.0.5.nupkg.sha512",
     "C:\\Users\\Liam_Statham\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\5.0.5\\microsoft.aspnetcore.mvc.razor.runtimecompilation.5.0.5.nupkg.sha512",
