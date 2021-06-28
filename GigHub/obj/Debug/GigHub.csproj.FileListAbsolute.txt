@@ -108,3 +108,4 @@ C:\Users\Liam_Statham\github\Projects\GigHub\obj\Debug\GigHub.dll
 C:\Users\Liam_Statham\github\Projects\GigHub\obj\Debug\GigHub.pdb
 C:\Users\Liam_Statham\github\Projects\GigHub\obj\Debug\GigHub.Migrations.InitialModel.resources
 C:\Users\Liam_Statham\github\Projects\GigHub\obj\Debug\GigHub.csproj.GenerateResource.cache
+C:\Users\Liam_Statham\github\Projects\GigHub\obj\Debug\GigHub.Migrations.CreateGigTable.resources
