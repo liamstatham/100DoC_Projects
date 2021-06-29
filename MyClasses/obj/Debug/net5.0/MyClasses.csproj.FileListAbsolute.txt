@@ -1,0 +1,12 @@
+C:\Users\Liam_Statham\github\Projects\MyClasses\bin\Debug\net5.0\MyClasses.deps.json
+C:\Users\Liam_Statham\github\Projects\MyClasses\bin\Debug\net5.0\MyClasses.dll
+C:\Users\Liam_Statham\github\Projects\MyClasses\bin\Debug\net5.0\ref\MyClasses.dll
+C:\Users\Liam_Statham\github\Projects\MyClasses\bin\Debug\net5.0\MyClasses.pdb
+C:\Users\Liam_Statham\github\Projects\MyClasses\obj\Debug\net5.0\MyClasses.csprojAssemblyReference.cache
+C:\Users\Liam_Statham\github\Projects\MyClasses\obj\Debug\net5.0\MyClasses.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Liam_Statham\github\Projects\MyClasses\obj\Debug\net5.0\MyClasses.AssemblyInfoInputs.cache
+C:\Users\Liam_Statham\github\Projects\MyClasses\obj\Debug\net5.0\MyClasses.AssemblyInfo.cs
+C:\Users\Liam_Statham\github\Projects\MyClasses\obj\Debug\net5.0\MyClasses.csproj.CoreCompileInputs.cache
+C:\Users\Liam_Statham\github\Projects\MyClasses\obj\Debug\net5.0\MyClasses.dll
+C:\Users\Liam_Statham\github\Projects\MyClasses\obj\Debug\net5.0\ref\MyClasses.dll
+C:\Users\Liam_Statham\github\Projects\MyClasses\obj\Debug\net5.0\MyClasses.pdb
