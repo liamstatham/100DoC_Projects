@@ -100,3 +100,14 @@ C:\Users\Liam_Statham\github\Projects\MyClassesTest\obj\Debug\net5.0\MyClassesTe
 C:\Users\Liam_Statham\github\Projects\MyClassesTest\obj\Debug\net5.0\ref\MyClassesTest.dll
 C:\Users\Liam_Statham\github\Projects\MyClassesTest\obj\Debug\net5.0\MyClassesTest.pdb
 C:\Users\Liam_Statham\github\Projects\MyClassesTest\obj\Debug\net5.0\MyClassesTest.genruntimeconfig.cache
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\System.Drawing.Common.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\System.Security.Permissions.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\System.Windows.Extensions.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Liam_Statham\github\Projects\MyClassesTest\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll

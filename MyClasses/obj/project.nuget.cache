@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "l4iB1slfkGGTJ5GtEckesA/D9330/5Cyzd3zjQhS9ACU2p+osFRwbwQU3pPhP9tjuwTKpEmFmB2qtcCTy6gchA==",
+  "dgSpecHash": "94YWNoiMK2A6w6mRJR1EhBB6NUXV3FmGCJAo++8plo+B+o9xRvUfUwi6UrpHrsau0K9tRydmr1Rh3AkOKIw9qw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Liam_Statham\\github\\Projects\\MyClasses\\MyClasses.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\Liam_Statham\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
