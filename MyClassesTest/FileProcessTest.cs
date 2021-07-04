@@ -22,10 +22,15 @@ namespace MyClassesTest
         {
             //TODO: clean up after all tests in class
         }
+
+        #region TestInitialize Method
         [TestInitialize]
         public void TestInitialize()
         {
             TestContext.WriteLine("In Test initialize method");
+
+            WriteDescription(this.GetType());
+
             if (TestContext.TestName.StartsWith("FileNameDoesExist"))
             {
                 SetGoodFileName();
@@ -36,7 +41,9 @@ namespace MyClassesTest
                 }
             }
         }
+        #endregion
 
+        #region Test Cleanup method
         [TestCleanup]
         public void TestCleanup()
         {
@@ -50,8 +57,15 @@ namespace MyClassesTest
                 }
             }
         }
+        #endregion
 
+        #region FileNameDoesExist Method
         [TestMethod]
+        [Description("Check to see if file exists.")]
+        [Owner("Liam S")]
+        [Priority(1)]
+        [TestCategory("No Exception")]
+        //[Ignore]
         public void FileNameDoesExist()
         {
             //Arrange
@@ -66,7 +80,13 @@ namespace MyClassesTest
 
             Assert.IsTrue(fromCall);
         }
+        #endregion
+
+        #region FileNameDoesNotExist Method
         [TestMethod]
+        [Description("Check to see if file does not exist.")]
+        [Owner("Liam S")]
+        [TestCategory("No Exception")]
         public void FileNameDoesNotExist()
         {
             //Arrange
@@ -78,8 +98,14 @@ namespace MyClassesTest
             //Assert
             Assert.IsFalse(fromCall);
         }
+        #endregion
+
+        #region FileNameIsNullOrEmpty ExpectedException Method
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
+        [Description("Check for a thrown ArgumentNullException using ExpectedException.")]
+        [Owner("Liam S")]
+        [TestCategory("Exception")]
         public void FileNameIsNullOrEmpty_UsingAttribute()
         {
             //arrange
@@ -89,8 +115,15 @@ namespace MyClassesTest
             //act assert
             fp.FileExists("");
         }
+        #endregion
+
+        #region FileNameIsNullOrEmpty TryCatch Method
         [TestMethod]
+        [Description("Check for a thrown ArgumentNullException using Try catch.")]
+        [Owner("Liam S")]
+        [TestCategory("Exception")]
         public void FileNameIsNullOrEmpty_UsingTryCatch()
+
         {
             //arrange
             FileProcess fp = new FileProcess();
@@ -108,5 +141,45 @@ namespace MyClassesTest
             //fail test
             Assert.Fail("Call to FileExists() did not throw an ArgumentNullException");
         }
+        #endregion
+
+        #region TimeOutTest Method
+        [TestMethod]
+        [Timeout(3000)]
+        public void SimulateTimeout()
+        {
+            System.Threading.Thread.Sleep(4000);
+        }
+        #endregion
+
+        #region AreNumbersEqual Method
+        [TestMethod]
+        [DataRow(1,1, DisplayName ="First Test (1,1")]
+        [DataRow(42,42,DisplayName ="Second Test (42,42)")]
+        public void AreNumbersEqual(int num1, int num2)
+        {
+            Assert.AreEqual(num1, num2);
+        }
+        #endregion
+
+        #region FileNameUsingDataRow Method
+        [TestMethod]
+        [DeploymentItem("FileToDeploy.txt")]
+        [DataRow(@"C:\Windows\Regedit.exe", DisplayName ="Regedit.exe")]
+        [DataRow("FileToDeploy.txt", DisplayName = "Deployment Item: FileToDeploy.txt")]
+        public void FileNameUsingDataRow(string fileName)
+        {
+            FileProcess fp = new FileProcess();
+            bool fromCall;
+
+            if (!fileName.Contains(@"\"))
+            {
+                fileName = TestContext.DeploymentDirectory + @"\" + fileName;
+            }
+            TestContext.WriteLine("Checking file " + fileName);
+            fromCall = fp.FileExists(fileName);
+            Assert.IsTrue(fromCall);
+        }
+        #endregion
     }
 }

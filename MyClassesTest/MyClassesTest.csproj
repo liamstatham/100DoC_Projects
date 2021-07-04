@@ -26,6 +26,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="FileToDeploy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="MyClasses.runsettings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>MyClasses.Designer.cs</LastGenOutput>
