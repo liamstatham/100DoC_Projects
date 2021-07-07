@@ -3,5 +3,7 @@
   <TestRunParameters>
     <Parameter name='GoodFileName'
                value='[AppPath]\TestFile.txt' />
+    <Parameter name='ConnectionString'
+               value='Server=Localhost;Database=Test;Integrated Security=Yes'></Parameter>
   </TestRunParameters>
 </RunSettings>
