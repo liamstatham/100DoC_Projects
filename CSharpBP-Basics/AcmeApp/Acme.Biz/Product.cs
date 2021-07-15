@@ -16,6 +16,7 @@ namespace Acme.Biz
         public Product()
         {
             Console.WriteLine("Product instance created.");
+            //this.ProductVendor = new Vendor();
         }
         public Product(int productId,
                        string productName,
@@ -54,11 +55,25 @@ namespace Acme.Biz
             set { productId = value; }
         }
 
+        private Vendor productVendor;
+
+        public Vendor ProductVendor
+        {
+            get { 
+                if(productVendor == null)
+                {
+                    productVendor = new Vendor();
+                }
+                return productVendor; }
+            set { productVendor = value; }
+        }
+
+
         #endregion
         public string SayHello()
         {
-            var vendor = new Vendor();
-            vendor.SendWelcomeEmail("Message from product.");
+            //var vendor = new Vendor();
+            //vendor.SendWelcomeEmail("Message from product.");
 
             var emailService = new EmailService();
             emailService.SendMessage("New Product", this.ProductName, "sales@abc.com");
