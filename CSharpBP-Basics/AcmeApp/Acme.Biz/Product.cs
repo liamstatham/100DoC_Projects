@@ -40,6 +40,8 @@ namespace Acme.Biz
 
         #region Properties
 
+        public decimal cost { get; set; }
+
         private DateTime? availabilityDate;
 
         public DateTime? AvailabilityDate
@@ -121,5 +123,17 @@ namespace Acme.Biz
                 + " (" + ProductId + "): " + Description + " Available on: "
                 + AvailabilityDate?.ToShortDateString();
         }
+
+        public override string ToString() =>
+            this.productName + " (" + this.productId + ")";
+       
+
+        /// <summary>
+        /// Calculates the suggested retail price.
+        /// </summary>
+        /// <returns></returns>
+        public decimal CalculateSuggestedPrice(decimal markupPercent) =>
+            this.cost + (this.cost * markupPercent /100 );
+        
     }
 }
